@@ -40,10 +40,10 @@ export function AboutSection() {
             About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
-            I'm a passionate Frontend Developer with over 5 years of experience
-            building modern web applications. I specialize in creating
-            user-friendly interfaces while leveraging full-stack technologies
-            and AI to deliver innovative solutions.
+            I&#39;m a passionate Frontend Developer with over 5 years of
+            experience building modern web applications. I specialize in
+            creating user-friendly interfaces while leveraging full-stack
+            technologies and AI to deliver innovative solutions.
           </p>
         </div>
 

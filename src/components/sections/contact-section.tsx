@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/shadcn/card";
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 export function ContactSection() {
   const contactInfo = [
@@ -53,7 +53,7 @@ export function ContactSection() {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to work together? I'd love to hear about your project and
+            Ready to work together? I&#39;d love to hear about your project and
             discuss how I can help bring your ideas to life.
           </p>
         </div>
@@ -111,13 +111,13 @@ export function ContactSection() {
 
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-6">
               <h3 className="font-semibold text-foreground mb-2">
-                Let's Build Something Amazing
+                Let&#39;s Build Something Amazing
               </h3>
               <p className="text-muted-foreground text-sm text-pretty">
-                I'm always excited to work on new projects and collaborate with
-                talented individuals. Whether you need a complete web
-                application or want to enhance your existing platform, I'm here
-                to help turn your vision into reality.
+                I&#39;m always excited to work on new projects and collaborate
+                with talented individuals. Whether you need a complete web
+                application or want to enhance your existing platform, I&#39;m
+                here to help turn your vision into reality.
               </p>
             </div>
           </div>

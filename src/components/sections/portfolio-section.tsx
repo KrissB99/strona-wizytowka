@@ -6,7 +6,8 @@ import {
 } from "@/components/shadcn/card";
 import { Button } from "@/components/shadcn/button";
 import { Badge } from "@/components/shadcn/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export function PortfolioSection() {
   const projects = [
@@ -48,7 +49,7 @@ export function PortfolioSection() {
               className="group hover:shadow-xl transition-all duration-300 overflow-hidden pt-0"
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"

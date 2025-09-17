@@ -17,7 +17,6 @@ export function Navigation({
   sections,
 }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,14 +49,6 @@ export function Navigation({
     }
     setIsOpen(false);
   };
-
-  const navItems = [
-    { id: "hero", label: t("nav.home") },
-    { id: "about", label: t("nav.about") },
-    { id: "resume", label: t("nav.resume") },
-    { id: "portfolio", label: t("nav.portfolio") },
-    { id: "contact", label: t("nav.contact") },
-  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-md shadow-sm">

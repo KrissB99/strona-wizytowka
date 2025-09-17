@@ -5,13 +5,12 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { ResumeSection } from "@/components/sections/resume-section";
 import { PortfolioSection } from "@/components/sections/portfolio-section";
-import { TechnologySection } from "@/components/sections/skills-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { ProjectsSection } from "@/components/sections/self-projects";
 
 // Components
 import { Navigation } from "@/components/navigation";
-import Plasma from "@/components/Plasma";
+// import Plasma from "@/components/Plasma";
 import { useState } from "react";
 
 export default function Home() {

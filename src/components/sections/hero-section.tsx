@@ -4,9 +4,6 @@ import Image from "next/image";
 import { Button } from "@/components/shadcn/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import BlurText from "@/components/react-bits/BlurText";
-import TextType from "@/components/react-bits/TextType";
-import LiquidEther from "../react-bits/LiquidEther";
-import Plasma from "../Plasma";
 
 export function HeroSection() {
   const scrollToPortfolio = () => {
