@@ -15,19 +15,19 @@ export function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com",
+      value: "krysia@banaszewski.pl",
+      href: "mailto:krysia@banaszewski.pl",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+48 505-368-902",
+      href: "tel:+505368902",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Płońsk/Warszawa, Poland",
       href: "#",
     },
   ];
@@ -46,7 +46,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background z-50">
+    <section id="contact" className="py-20 pt-auto z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -60,67 +60,67 @@ export function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <info.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">
-                        {info.label}
-                      </p>
-                      <a
-                        href={info.href}
-                        className="text-foreground hover:text-primary transition-colors"
-                      >
-                        {info.value}
-                      </a>
-                    </div>
+          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+            <CardHeader>
+              <CardTitle>Contact Information</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {contactInfo.map((info, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <info.icon className="h-5 w-5 text-primary" />
                   </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Follow Me</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex space-x-4">
-                  {socialLinks.map((social, index) => (
+                  <div>
+                    <p className="text-sm text-muted-foreground">
+                      {info.label}
+                    </p>
                     <a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300 group"
+                      href={info.href}
+                      className="text-foreground hover:text-primary transition-colors"
                     >
-                      <social.icon className="h-5 w-5" />
-                      <span className="sr-only">{social.label}</span>
+                      {info.value}
                     </a>
-                  ))}
+                  </div>
                 </div>
-              </CardContent>
-            </Card>
+              ))}
+            </CardContent>
+          </Card>
 
-            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-6">
-              <h3 className="font-semibold text-foreground mb-2">
-                Let&#39;s Build Something Amazing
-              </h3>
+          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+            <CardHeader>
+              <CardTitle>Let&#39;s Build Something Amazing</CardTitle>
+            </CardHeader>
+            <CardContent>
               <p className="text-muted-foreground text-sm text-pretty">
                 I&#39;m always excited to work on new projects and collaborate
                 with talented individuals. Whether you need a complete web
                 application or want to enhance your existing platform, I&#39;m
                 here to help turn your vision into reality.
               </p>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+            <CardHeader>
+              <CardTitle>Follow Me</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex space-x-4">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300 group"
+                  >
+                    <social.icon className="h-5 w-5" />
+                    <span className="sr-only">{social.label}</span>
+                  </a>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

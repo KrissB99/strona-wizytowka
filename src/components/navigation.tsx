@@ -17,47 +17,12 @@ export function Navigation({
 }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["hero", "about", "resume", "portfolio", "contact"];
-      const scrollPosition = window.scrollY + 100;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-100 bg-background/40 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-100">
+      <div className="mx-auto px-12">
         <div className="flex justify-between items-center h-16">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <div className="font-bold text-xl text-violet-500 dark:text-violet-200 mr-6">
-              Krystyna Banaszewska
-            </div>
             <div className="flex space-x-2">
               {sections.map((section, index) => (
                 <Button
@@ -82,9 +47,7 @@ export function Navigation({
           </div>
 
           {/* Mobile Navigation Button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
-            <LanguageToggle />
+          <div className="flex md:hidden items-center space-x-2">
             <Button
               variant="ghost"
               size="sm"
@@ -102,11 +65,11 @@ export function Navigation({
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/20 dark:bg-black/20 backdrop-blur-3xl border-t border-border rounded-2xl">
               {sections.map((item, index) => (
                 <button
                   key={index}
-                  onClick={() => scrollToSection(item.key)}
+                  onClick={() => setActiveSection(item.key)}
                   className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
                     activeSection === item.key
                       ? "text-primary"

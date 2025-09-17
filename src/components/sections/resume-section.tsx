@@ -7,26 +7,28 @@ import {
 } from "@/components/shadcn/card";
 import { Badge } from "@/components/shadcn/badge";
 import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
 
 export function ResumeSection() {
+  const { t } = useLanguage();
   const experiences = [
-    {
-      title: "UI/UX Designer & Frontend Developer",
-      company: "Baileo",
-      location: "Remote",
-      period: "2024 - 2025",
-      logo: "/logos/baileo.png",
-      description:
-        "Lead frontend development for enterprise applications, mentoring junior developers and implementing AI-powered features.",
-      technologies: [
-        "Elixir",
-        "TailwindCSS",
-        "Petal",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-      ],
-    },
+    // {
+    //   title: "UI/UX Designer & Frontend Developer",
+    //   company: "Baileo",
+    //   location: "Remote",
+    //   period: "2024 - 2025",
+    //   logo: "/logos/baileo.png",
+    //   description:
+    //     "Lead frontend development for enterprise applications, mentoring junior developers and implementing AI-powered features.",
+    //   technologies: [
+    //     "Elixir",
+    //     "TailwindCSS",
+    //     "Petal",
+    //     "HTML5",
+    //     "CSS3",
+    //     "JavaScript",
+    //   ],
+    // },
     {
       title: "Full-Stack Developer",
       company: "Nokia",
@@ -107,17 +109,8 @@ export function ResumeSection() {
   ];
 
   return (
-    <section id="resume" className="py-20 bg-background">
+    <section id="resume" className="py-20 pt-auto z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Resume
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and technical expertise
-          </p>
-        </div>
-
         {/* Experience */}
         <div className="flex items-center mb-6">
           <Briefcase className="h-5 w-5 text-primary mr-2" />
@@ -127,7 +120,10 @@ export function ResumeSection() {
         </div>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index} className="hover:shadow-md transition-shadow">
+            <Card
+              key={index}
+              className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40"
+            >
               <CardHeader>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
@@ -144,15 +140,15 @@ export function ResumeSection() {
                       {exp.title}
                     </CardTitle>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                      <span className="font-medium text-primary">
+                      <span className="font-medium text-violet-700">
                         {exp.company}
                       </span>
                       <div className="flex items-center gap-4">
-                        <div className="flex items-center">
+                        <div className="flex items-center text-primary/80">
                           <MapPin className="h-3 w-3 mr-1" />
                           {exp.location}
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex items-center text-primary/80">
                           <Calendar className="h-3 w-3 mr-1" />
                           {exp.period}
                         </div>
@@ -162,7 +158,7 @@ export function ResumeSection() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4 text-pretty">
+                <p className="text-black/90 mb-3 text-pretty">
                   {exp.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -184,7 +180,10 @@ export function ResumeSection() {
         </div>
         <div className="space-y-6">
           {education.map((edu, index) => (
-            <Card key={index} className="hover:shadow-md transition-shadow">
+            <Card
+              key={index}
+              className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40"
+            >
               <CardHeader>
                 <CardTitle className="text-lg">{edu.degree}</CardTitle>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
@@ -216,7 +215,7 @@ export function ResumeSection() {
           <h3 className="text-xl font-semibold text-foreground">Skill set</h3>
         </div>
         <div className="space-y-6">
-          <Card>
+          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
             <CardContent className="p-6">
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (

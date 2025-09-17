@@ -7,14 +7,15 @@ import {
 } from "@/components/shadcn/card";
 import { Button } from "@/components/shadcn/button";
 import { Badge } from "@/components/shadcn/badge";
-import { ExternalLink, Github, Link } from "lucide-react";
+import { Github, Link } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
 
 export function ProjectsSection() {
+  const { t } = useLanguage();
   const projects = [
     {
-      title: "Churn Prediction App",
-      description:
-        "This full-stack app lets enter customer data and receive churn probability predictions using a trained machine learning model.",
+      title: t("projects.churn.title"),
+      description: t("projects.churn.desc"),
       image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg",
       technologies: [
         "Flask",
@@ -24,7 +25,6 @@ export function ProjectsSection() {
         "Docker",
         "Docker Compose",
       ],
-      liveUrl: "#",
       githubUrl: "https://github.com/KrissB99/Customer-Churn-Prediction",
       category: "AI/ML",
     },
@@ -44,22 +44,20 @@ export function ProjectsSection() {
         "Matplotlib",
         "Seaborn",
       ],
-      liveUrl: "#",
       githubUrl: "https://github.com/KrissB99/DigitClassificationUsingCNN",
       category: "Master's Thesis",
     },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="py-20 pt-auto z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 pt-0">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Learning Projects
+            {t("projects.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experiments and apps built to explore new technologies and sharpen
-            my skills.
+            {t("projects.description")}
           </p>
         </div>
 
@@ -67,12 +65,14 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 overflow-hidden pt-0"
+              className="hover:shadow-md transition-shadow pt-0 bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40"
             >
               <div className="relative overflow-hidden">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
+                  width={200}
+                  height={200}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
@@ -100,10 +100,6 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
                   <Button
                     variant="outline"
                     size="sm"
