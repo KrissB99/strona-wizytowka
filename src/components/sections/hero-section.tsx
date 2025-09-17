@@ -12,7 +12,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen pt-12 flex items-center justify-center"
+      className="relative md:min-h-screen pt-24 md:pt-12 flex md:items-center md:justify-center"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-99">
         <div className="mb-8">
@@ -31,7 +31,7 @@ export function HeroSection() {
             delay={150}
             animateBy="words"
             direction="top"
-            className="text-6xl sm:text-4xl font-bold mb-6 mx-auto"
+            className="text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto text-balace"
           />
 
           <h2 className="text-xl sm:text-2xl text-muted-foreground mb-6 text-balance">
