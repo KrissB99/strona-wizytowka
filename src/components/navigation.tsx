@@ -3,7 +3,6 @@ import { Button } from "@/components/shadcn/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "./language-toggle";
-import { useLanguage } from "@/contexts/language-context";
 
 interface NavigationProps {
   activeSection: string;
