@@ -26,14 +26,14 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <div className="absolute w-full h-full z-2">
-        <Plasma
+        {/* <Plasma
           color="#AD3088"
           speed={0.6}
           direction="forward"
           scale={1.1}
           opacity={0.8}
           mouseInteractive={true}
-        />
+        /> */}
       </div>
       <Navigation
         activeSection={activeSection}
