@@ -34,22 +34,8 @@ export const translations = {
       // Resume Section
     "resume.title": "Resume",
     "resume.education": "Education",
-    "resume.experience": "Experience",
-    "resume.skills": "Technical Skills",
-    "resume.education.degree": "Bachelor of Computer Science",
-    "resume.education.university": "University of Technology",
-    "resume.education.year": "2018 - 2022",
-    "resume.experience.senior": "Senior Frontend Developer",
-    "resume.experience.senior.company": "Tech Solutions Inc.",
-    "resume.experience.senior.period": "2022 - Present",
-    "resume.experience.senior.desc":
-      "Leading frontend development projects, mentoring junior developers, and implementing AI-powered features.",
-    "resume.experience.junior": "Junior Full-Stack Developer",
-    "resume.experience.junior.company": "Digital Agency",
-    "resume.experience.junior.period": "2020 - 2022",
-    "resume.experience.junior.desc":
-      "Developed responsive web applications using React, Node.js, and modern development practices.",
-
+    "resume.experience": "Work Experience",
+    "resume.nokiaDesc": "Worked on scalable web applications from concept to deployment, collaborating closely with design and product teams.",
     // Portfolio Section
     "portfolio.title": "Portfolio",
     "portfolio.description":
@@ -124,24 +110,11 @@ export const translations = {
       "Skupiam się na tworzeniu szybkich, dostępnych i zoptymalizowanych pod SEO aplikacji webowych.",
     
       // Resume Section
-    "resume.title": "CV",
+    "resume.title": "Curriculum vitae",
     "resume.education": "Wykształcenie",
     "resume.experience": "Doświadczenie",
-    "resume.skills": "Umiejętności techniczne",
-    "resume.education.degree": "Licencjat Informatyki",
-    "resume.education.university": "Politechnika",
-    "resume.education.year": "2018 - 2022",
-    "resume.experience.senior": "Senior Frontend Developer",
-    "resume.experience.senior.company": "Tech Solutions Inc.",
-    "resume.experience.senior.period": "2022 - Obecnie",
-    "resume.experience.senior.desc":
-      "Prowadzenie projektów frontend, mentoring młodszych programistów i implementacja funkcji opartych na AI.",
-    "resume.experience.junior": "Junior Full-Stack Developer",
-    "resume.experience.junior.company": "Agencja Cyfrowa",
-    "resume.experience.junior.period": "2020 - 2022",
-    "resume.experience.junior.desc":
-      "Tworzenie responsywnych aplikacji webowych z wykorzystaniem React, Node.js i nowoczesnych praktyk programistycznych.",
-
+    "resume.nokiaDesc": "Praca nad skalowalnymi aplikacjami webowymi od koncepcji do wdrożenia, ścisła współpraca z zespołami projektowymi i produktowymi.",
+    
     // Portfolio Section
     "portfolio.title": "Portfolio",
     "portfolio.description":

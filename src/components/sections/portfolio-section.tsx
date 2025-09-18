@@ -9,6 +9,7 @@ import { Badge } from "@/components/shadcn/badge";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/language-context";
+import { Headline2, Paragraph } from "../text";
 
 export function PortfolioSection() {
   const { t } = useLanguage();
@@ -33,15 +34,14 @@ export function PortfolioSection() {
   ];
 
   return (
-    <section id="portfolio" className="h-screen pt-auto z-50 relative">
+    <section
+      id="portfolio"
+      className="md:relative md:h-screen py-12 md:pt-auto md:z-50"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:py-12 lg:px-8 h-full flex flex-col justify-center">
         <div className="text-center mb-16 pt-0">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t("portfolio.title")}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("portfolio.description")}
-          </p>
+          <Headline2 text={t("portfolio.title")} />
+          <Paragraph text={t("portfolio.description")} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

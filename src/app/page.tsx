@@ -15,10 +15,13 @@ import { Navigation } from "@/components/navigation";
 import Plasma from "@/components/react-bits/Plasma";
 import { useTheme } from "@/contexts/theme-context";
 import { useLanguage } from "@/contexts/language-context";
+import { TechnologySection } from "@/components/sections/skills-section";
 
 export default function Home() {
   const { theme } = useTheme();
   const { t } = useLanguage();
+
+  const [activeSection, setActiveSection] = useState("about");
 
   const SECTIONS = [
     { key: "about", label: t("nav.about"), component: <AboutSection /> },
@@ -35,7 +38,7 @@ export default function Home() {
     },
     { key: "contact", label: t("nav.contact"), component: <ContactSection /> },
   ];
-  const [activeSection, setActiveSection] = useState("about");
+
   return (
     <main className="min-h-screen bg-[#f1ede8] dark:bg-black">
       <Navigation
@@ -45,7 +48,7 @@ export default function Home() {
       />
       <div className="absolute w-full h-full z-2">
         <Plasma
-          color={theme === "light" ? "#8B5ED4" : "#FEFEDF"}
+          color={theme === "light" ? "#F2F1D6" : "#FEFEDF"}
           speed={0.6}
           direction="forward"
           scale={1.1}
@@ -57,9 +60,17 @@ export default function Home() {
         <div className="col-span-1">
           <HeroSection />
         </div>
-        <div className="col-span-2 h-screen overflow-auto">
+        <div className="hidden md:block col-span-2 h-screen overflow-auto">
           {SECTIONS.find((s) => s.key === activeSection)?.component}
         </div>
+      </div>
+      <div className="md:hidden">
+        <AboutSection />
+        <ResumeSection />
+        <PortfolioSection />
+        <TechnologySection />
+        <ProjectsSection />
+        <ContactSection />
       </div>
     </main>
   );

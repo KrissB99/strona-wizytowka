@@ -1,9 +1,16 @@
 "use client";
 
+// Components
 import { Card, CardContent } from "@/components/shadcn/card";
-import { useLanguage } from "@/contexts/language-context";
 import { motion } from "framer-motion";
+
+// Contexts
+import { useLanguage } from "@/contexts/language-context";
+
+// Icons
 import { Code, Database, Brain, Zap } from "lucide-react";
+import { caprasimoBoldFont, MontserratFont } from "@/lib/fonts";
+import { Headline2, Headline3, Paragraph } from "../text";
 
 export function AboutSection() {
   const { t } = useLanguage();
@@ -31,15 +38,14 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="h-screen pt-auto z-50 relative">
+    <section
+      id="about"
+      className="md:relative md:h-screen py-12 md:pt-auto md:z-50"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:py-12 lg:px-8 h-full flex flex-col justify-center">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t("about.title")}
-          </h2>
-          <p className="text-lg text-black/70 dark:text-white/70 max-w-3xl mx-auto text-pretty">
-            {t("about.description")}
-          </p>
+          <Headline2 text={t("about.title")} />
+          <Paragraph text={t("about.description")} className="text-md" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -58,12 +64,8 @@ export function AboutSection() {
                   <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-violet-500/20 flex items-center justify-center group-hover:bg-violet-500/40 transition-colors">
                     <skill.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    {skill.title}
-                  </h3>
-                  <p className="text-sm text-black/60 dark:text-white/70 text-pretty">
-                    {skill.description}
-                  </p>
+                  <Headline3 text={skill.title} />
+                  <Paragraph text={skill.description} />
                 </CardContent>
               </Card>
             </motion.div>

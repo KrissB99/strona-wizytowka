@@ -1,8 +1,17 @@
-import React, { useState, useEffect, JSX } from "react";
-import { Button } from "@/components/shadcn/button";
+"use client";
+import React, { useState, JSX } from "react";
+
+// Icons
 import { Menu, X } from "lucide-react";
+
+// Components
+import { Button } from "@/components/shadcn/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "./language-toggle";
+
+// Fonts
+import { caprasimoBoldFont } from "@/lib/fonts";
+import { motion } from "framer-motion";
 
 interface NavigationProps {
   activeSection: string;
@@ -17,28 +26,44 @@ export function Navigation({
 }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-100">
-      <div className="mx-auto px-12">
-        <div className="flex justify-between items-center h-16">
+      <div className="mx-auto">
+        <div className="flex justify-between items-center h-16 bg-violet-300/10 md:bg-transparent backdrop-blur-3xl md:backdrop-blur-none px-6 md:px-12">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <div className="flex space-x-2">
+            <motion.div
+              className="flex space-x-2"
+              initial={{ y: 5 }}
+              animate={{ y: 0 }}
+              transition={{ type: "spring" }}
+            >
               {sections.map((section, index) => (
-                <Button
-                  variant="link"
-                  key={index}
-                  onClick={() => setActiveSection(section.key)}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    activeSection === section.key
-                      ? "text-primary underline underline-offset-4"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  {section.label}
-                </Button>
+                <motion.div key={index} whileHover={{ scale: 1.1 }}>
+                  <Button
+                    variant="link"
+                    onClick={() => setActiveSection(section.key)}
+                    className={`text-sm font-medium transition-colors drop-shadow-sm drop-shadow-violet-100 dark:drop-shadow-violet-950 hover:text-violet-800/90 dark:hover:text-violet-200/90 ${
+                      caprasimoBoldFont.className
+                    } ${
+                      activeSection === section.key
+                        ? "text-violet-600 dark:text-violet-400 underline underline-offset-4"
+                        : "text-primary/80"
+                    }`}
+                  >
+                    {section.label}
+                  </Button>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex items-center space-x-2">
@@ -69,7 +94,10 @@ export function Navigation({
               {sections.map((item, index) => (
                 <button
                   key={index}
-                  onClick={() => setActiveSection(item.key)}
+                  onClick={() => {
+                    setActiveSection(item.key);
+                    scrollToSection(item.key);
+                  }}
                   className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
                     activeSection === item.key
                       ? "text-primary"

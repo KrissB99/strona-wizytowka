@@ -9,8 +9,11 @@ import {
   CardTitle,
 } from "@/components/shadcn/card";
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Headline2, Paragraph } from "../text";
+import { useLanguage } from "@/contexts/language-context";
 
 export function ContactSection() {
+  const { t } = useLanguage();
   const contactInfo = [
     {
       icon: Mail,
@@ -49,13 +52,8 @@ export function ContactSection() {
     <section id="contact" className="py-20 pt-auto z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Get In Touch
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to work together? I&#39;d love to hear about your project and
-            discuss how I can help bring your ideas to life.
-          </p>
+          <Headline2 text={t("contact.title")} />
+          <Paragraph text={t("contact.description")} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

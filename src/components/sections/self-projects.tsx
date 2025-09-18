@@ -9,6 +9,7 @@ import { Button } from "@/components/shadcn/button";
 import { Badge } from "@/components/shadcn/badge";
 import { Github, Link } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
+import { Headline2, Paragraph } from "../text";
 
 export function ProjectsSection() {
   const { t } = useLanguage();
@@ -53,12 +54,8 @@ export function ProjectsSection() {
     <section id="projects" className="py-20 pt-auto z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 pt-0">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t("projects.title")}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("projects.description")}
-          </p>
+          <Headline2 text={t("projects.title")} />
+          <Paragraph text={t("projects.description")} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -115,12 +112,12 @@ export function ProjectsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="https://github.com/KrissB99" target="_blank">
-            <Button variant="outline" size="lg">
+          <Button variant="outline" size="lg">
+            <Link href="https://github.com/KrissB99" target="_blank">
               <Github className="h-4 w-4 mr-2" />
               View More on GitHub
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

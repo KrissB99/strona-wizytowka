@@ -8,6 +8,7 @@ import {
 import { Badge } from "@/components/shadcn/badge";
 import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
+import { Headline2 } from "../text";
 
 export function ResumeSection() {
   const { t } = useLanguage();
@@ -35,15 +36,20 @@ export function ResumeSection() {
       location: "Remote",
       period: "2022 - Ongoing",
       logo: "/logos/nokia.png",
-      description:
-        "Built scalable web applications from concept to deployment, working closely with design and product teams.",
+      description: t("resume.nokiaDesc"),
       technologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
         "React.js",
         "Next.js",
         "Python",
         "SQLALchemy",
         "TailwindCSS",
         "Docker",
+        "Git",
+        "API",
       ],
     },
     {
@@ -109,13 +115,19 @@ export function ResumeSection() {
   ];
 
   return (
-    <section id="resume" className="py-20 pt-auto z-50 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="resume"
+      className="md:relative md:h-screen py-12 md:pt-auto md:z-50"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-auto py-12">
+        <div className="text-center">
+          <Headline2 text={t("resume.title")} />
+        </div>
         {/* Experience */}
         <div className="flex items-center mb-6">
           <Briefcase className="h-5 w-5 text-primary mr-2" />
           <h3 className="text-xl font-semibold text-foreground">
-            Work Experience
+            {t("resume.experience")}
           </h3>
         </div>
         <div className="space-y-6">

@@ -6,9 +6,26 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import BlurText from "@/components/react-bits/BlurText";
 import { useLanguage } from "@/contexts/language-context";
 import Link from "next/link";
+import {
+  caprasimoBoldFont,
+  MontserratBoldFont,
+  MontserratFont,
+} from "@/lib/fonts";
+import { Headline3, Paragraph } from "../text";
+import { motion } from "framer-motion";
 
 export function HeroSection() {
   const { t } = useLanguage();
+
+  const SOCIALS = [
+    { icon: Github, label: "GitHub", href: "https://github.com/KrissB99" },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/krystyna-banaszewska/",
+    },
+    { icon: Mail, label: "Email", href: "mailto:krysia@banaszewski.pl" },
+  ];
   return (
     <section
       id="hero"
@@ -27,53 +44,53 @@ export function HeroSection() {
             />
           </div>
           <BlurText
-            text={t("hero.greeting") + " " + "Krysia Banaszewska"}
+            text={t("hero.greeting")}
             delay={150}
             animateBy="words"
             direction="top"
-            className="text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto text-balace"
+            className={`text-4xl sm:text-3xl md:text-4xl mx-auto text-balace ${MontserratFont.className}`}
           />
-
-          <h2 className="text-xl sm:text-2xl text-muted-foreground mb-6 text-balance">
-            {t("hero.title")}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            {t("hero.tagline")}
-          </p>
+          <BlurText
+            text={"Krystyna Banaszewska"}
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto text-balace text-violet-600 dark:text-violet-400 ${caprasimoBoldFont.className}`}
+          />
+          <Headline3
+            text="Frontend Developer"
+            className="text-3xl text-[#479a89] tracking-wide"
+          />
+          <Headline3
+            text="with Full Stack & AI Expertise"
+            className="text-xl text-[#479a89]"
+          />
+          <Paragraph
+            text={t("hero.tagline")}
+            className="text-md text-muted-foreground mt-6"
+          />
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button size="lg" className="group">
-            {t("hero.cta")}
-          </Button>
           <div className="flex gap-4">
-            <Link
-              href="https://github.com/KrissB99"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="icon">
-                <Github className="h-4 w-4" />
-              </Button>
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/krystyna-banaszewska/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="icon">
-                <Linkedin className="h-4 w-4" />
-              </Button>
-            </Link>
-            <Link
-              href="mailto:krysia@banaszewski.pl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="icon">
-                <Mail className="h-4 w-4" />
-              </Button>
-            </Link>
+            {SOCIALS.map(({ icon: Icon, label, href }) => (
+              <motion.div
+                key={label}
+                whileHover={{ scale: 1.3 }}
+                transition={{ type: "spring", stiffness: 400, damping: 30 }}
+              >
+                <Link
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                >
+                  <Button variant="outline" size="icon">
+                    <Icon className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

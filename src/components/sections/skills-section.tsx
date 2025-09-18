@@ -30,14 +30,14 @@ export function TechnologySection() {
     <div style={{ height: "200px", position: "relative", overflow: "hidden" }}>
       <LogoLoop
         logos={techLogos}
-        speed={120}
+        speed={50}
         direction="left"
         logoHeight={48}
         gap={40}
         pauseOnHover
         scaleOnHover
         fadeOut
-        fadeOutColor={theme === "light" ? "#ffffff" : ""}
+        fadeOutColor={theme === "light" ? "" : ""}
         ariaLabel="Technology partners"
       />
     </div>
