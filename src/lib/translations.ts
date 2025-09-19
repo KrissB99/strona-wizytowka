@@ -35,7 +35,37 @@ export const translations = {
     "resume.title": "Resume",
     "resume.education": "Education",
     "resume.experience": "Work Experience",
-    "resume.nokiaDesc": "Worked on scalable web applications from concept to deployment, collaborating closely with design and product teams.",
+    "resume.field": "Field of study",
+    "resume.spec": "Specialization",
+    "resume.skillset": "Technology Stack",
+    "resume.nokiaDesc": "I started as a Full Stack Developer, which gave me a solid understanding of application architecture. Over time, I shifted my focus toward frontend development and UI/UX design. As a team, we are responsible for automating processes and building solutions that support experts in designing and deploying fiber optic networks. We aim to deliver user-friendly applications while continuously adopting new technologies and striving for simplicity in our solutions.",
+    "resume.unclassifiedDesc": "I was responsible for designing and implementing the UI/UX and frontend layer of the application, integrating the system with Jira, connecting it with a language model (AI), and implementing database integration to ensure platform stability and high performance.",
+
+    // WAT
+    "resume.wat": "Military University Of Technology",
+    "resume.wat.title": "Bachelor of Science",
+    "resume.wat.field": "Biocybernetics and Biomedical Engineering",
+    "resume.wat.spec": "Biocybernetics",
+    "resume.wat.location": "Warsaw, Poland",
+    "resume.wat.description": "Thesis topic: “Development of a software application for interpreting data from sensors recording patient health events using a selected machine learning algorithm.”",
+
+
+    // University of Southern Denmark
+    "resume.denmark": "University of Southern Denmark",
+    "resume.denmark.title": "Exchange Program",
+    "resume.denmark.field": "Artificial Intelligence",
+    "resume.denmark.location": "Odense, Denmark",
+    "resume.denmark.description": "I took part in a student exchange program in Denmark, where I gained fundamental knowledge of artificial intelligence, including machine learning algorithms, data analysis, and practical applications of AI in software solutions.",
+
+
+    // Politechnika Lubelska
+    "resume.politechnika.lubelska": "Lublin University of Technology",
+    "resume.pl.title": "Master of Science",
+    "resume.pl.field": "Computer Science",
+    "resume.pl.spec": "Web Applications",
+    "resume.pl.location": "Lublin, Poland",
+    "resume.pl.description": "Thesis topic: “Comparative analysis of selected models for handwriting recognition.”",
+
     // Portfolio Section
     "portfolio.title": "Portfolio",
     "portfolio.description":
@@ -113,8 +143,36 @@ export const translations = {
     "resume.title": "Curriculum vitae",
     "resume.education": "Wykształcenie",
     "resume.experience": "Doświadczenie",
-    "resume.nokiaDesc": "Praca nad skalowalnymi aplikacjami webowymi od koncepcji do wdrożenia, ścisła współpraca z zespołami projektowymi i produktowymi.",
-    
+    "resume.field": "Kierunek",
+    "resume.spec": "Specjalizacja",
+    "resume.skillset": "Stack technologiczny",
+    "resume.nokiaDesc": "Rozpoczęłam pracę jako Full Stack Developer, co pozwoliło mi zdobyć doświadczenie w architekturze aplikacji. Z czasem zaczęłam specjalizować się w zadaniach związanych z frontendem oraz projektowaniem UI/UX. W ramach zespołu odpowiadamy za automatyzację procesów i tworzenie rozwiązań wspierających ekspertów w projektowaniu i wdrażaniu sieci światłowodowych. Dbamy o to, aby nasze aplikacje były intuicyjne i przyjazne dla użytkownika, jednocześnie stale rozwijając się w kierunku nowych technologii i prostoty rozwiązań.",
+    "resume.unclassifiedDesc": "Byłam odpowiedzialna za projektowanie i implementację warstwy UI/UX oraz frontendu aplikacji, integrację systemu z Jira, połączenie z modelem językowym (AI) oraz wdrożenie integracji z bazą danych w celu zapewnienia stabilności i wysokiej wydajności platformy.",
+
+    // WAT
+    "resume.wat": "Wojskowa Akademia Techniczna",
+    "resume.wat.title": "Inżynier nauk ścisłych",
+    "resume.wat.field": "Biocybernetyka i Inżynieria Biomedyczna",
+    "resume.wat.spec": "Biocybernetyka",
+    "resume.wat.location": "Warszawa, Polska",
+    "resume.wat.description": "Temat pracy dyplomowej: “Analiza porównawcza wybranych modeli do rozpoznawania pisma odręcznego.”",
+
+    // Dania
+    "resume.denmark": "Uniwersytet Południowej Danii",
+    "resume.denmark.title": "Wymiana Studencka",
+    "resume.denmark.field": "Sztuczna Inteligencja",
+
+    "resume.denmark.location": "Odense, Dania",
+    "resume.denmark.description": "Uczestniczyłam w wymianie studenckiej w Danii, podczas której zdobywałam podstawową wiedzę z zakresu sztucznej inteligencji, obejmującą algorytmy uczenia maszynowego, analizę danych oraz praktyczne zastosowania AI w rozwiązaniach programistycznych.",
+
+    // Politechnika Lubelska
+    "resume.politechnika.lubelska": "Politechnika Lubelska",
+    "resume.pl.title": "Magister nauk ścisłych",
+    "resume.pl.field": "Informatyka",
+    "resume.pl.spec": " Aplikacje Internetowe",
+    "resume.pl.location": "Lublin, Polska",
+    "resume.pl.description": "Opracowanie aplikacji programowej do interpretacji danych z sensorów rejestrujących zdarzenia zdrowotne pacjentów z wykorzystaniem wybranego algorytmu maszynowego uczenia się.",
+
     // Portfolio Section
     "portfolio.title": "Portfolio",
     "portfolio.description":

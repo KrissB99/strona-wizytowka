@@ -56,7 +56,7 @@ export default function Home() {
           mouseInteractive={true}
         />
       </div>
-      <div className="flex flex-col md:grid md:grid-cols-3 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col md:grid md:grid-cols-3">
         <div className="col-span-1">
           <HeroSection />
         </div>
