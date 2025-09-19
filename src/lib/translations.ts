@@ -12,7 +12,8 @@ export const translations = {
     "hero.title": "Frontend Developer with Full-Stack & AI Expertise",
     "hero.tagline":
       "I create modern web applications using the latest technologies, such as React.js, Next.js, Tailwind CSS, and artificial intelligence-based applications.",
-    "hero.cta": "View My Work",
+    "hero.frontendDeveloper": "Frontend Developer",
+    "hero.frontendDeveloper2": "with Full Stack & AI Expertise",
 
     // About Section
     "about.title": "About Me",
@@ -71,6 +72,7 @@ export const translations = {
     "portfolio.description":
       "Showcasing my recent projects and technical expertise",
     "portfolio.dentist.title": "Modern Dental Clinic Website",
+    "portfolio.dentist.category": "Healthcare",
     "portfolio.dentist.desc":
       "A professional website for a dental clinic featuring appointment booking, service showcase, and patient testimonials.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
@@ -88,24 +90,20 @@ export const translations = {
     "projects.churn.title": "Churn Prediction App",
     "projects.churn.desc":
       "This full-stack app lets enter customer data and receive churn probability predictions using a trained machine learning model.",
-    "projects.churn.tech":
-      "Flask, Scikit-Learn, Next.js, Tailwind CSS, Docker, Docker Compose",
     "projects.digit.title": "Digit Classification Using CNN",
     "projects.digit.desc":
       "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
-    "projects.digit.tech":
-      "Python, Numpy, Pandas, Keras, Tensorflow, Torch, Sklearn, Matplotlib, Seaborn",
     "projects.viewProject": "View Project", 
+    "projects.seeMyGithub": "See my Github Profile",
 
     // Contact Section
     "contact.title": "Get In Touch",
     "contact.description":
       "I'm always interested in new opportunities and collaborations. Let's discuss your next project!",
-    "contact.form.name": "Name",
-    "contact.form.email": "Email",
-    "contact.form.message": "Message",
-    "contact.form.send": "Send Message",
-    "contact.social": "Connect with me",
+    "contact.info": "Contact info",
+    "contact.message.title": "Let's Build Something Amazing!",
+    "contact.message.description": "I'm always excited to work on new projects and collaborate with talented individuals. Whether you need a complete web application or want to enhance your existing platform, I'm here to help turn your vision into reality.",
+    "contact.followMe": "Follow me"
   },
   pl: {
     // Navigation
@@ -120,7 +118,8 @@ export const translations = {
     "hero.title": "Frontend, z doświadczeniem w Full-Stack oraz AI",
     "hero.tagline":
       "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii tj. React.js, Next.js, Tailwind CSS i aplikacjach opartych na sztucznej inteligencji.",
-    "hero.cta": "Zobacz moje porfolio",
+        "hero.frontendDeveloper": "Programistka Frontend",
+    "hero.frontendDeveloper2": "z doświadczeniem w Full Stack & AI",
 
     // About Section
     "about.title": "O mnie",
@@ -161,7 +160,6 @@ export const translations = {
     "resume.denmark": "Uniwersytet Południowej Danii",
     "resume.denmark.title": "Wymiana Studencka",
     "resume.denmark.field": "Sztuczna Inteligencja",
-
     "resume.denmark.location": "Odense, Dania",
     "resume.denmark.description": "Uczestniczyłam w wymianie studenckiej w Danii, podczas której zdobywałam podstawową wiedzę z zakresu sztucznej inteligencji, obejmującą algorytmy uczenia maszynowego, analizę danych oraz praktyczne zastosowania AI w rozwiązaniach programistycznych.",
 
@@ -178,6 +176,7 @@ export const translations = {
     "portfolio.description":
       "Prezentacja moich ostatnich projektów i umiejętności technicznych",
     "portfolio.dentist.title": "Strona nowoczesnej kliniki dentystycznej",
+    "portfolio.dentist.category": "Zdrowie",
     "portfolio.dentist.desc":
       "Profesjonalna strona internetowa dla kliniki dentystycznej z funkcją rezerwacji wizyt, prezentacją usług i opiniami pacjentów.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
@@ -187,15 +186,28 @@ export const translations = {
     "portfolio.psychologist.tech":
       "React, Next.js, Framer Motion, Tailwind CSS",
     "portfolio.viewProject": "Zobacz projekt",
+    "projects.seeMyGithub": "Zobacz mojego Githuba",
+    
+
+    // Project Section
+    "projects.title": "Moje Projekty",
+    "projects.description":
+      "Eksperymenty i aplikacje stworzone w celu zgłębiania nowych technologii i doskonalenia moich umiejętności.",
+    "projects.churn.title": "Aplikacja do przewidywania",
+    "projects.churn.desc":
+      "Ta aplikacja typu full-stack umożliwia wprowadzanie danych klientów i otrzymywanie prognoz dotyczących prawdopodobieństwa odejścia klientów przy użyciu wyszkolonego modelu uczenia maszynowego.",
+    "projects.digit.title": "Klasyfikacja cyfr przy użyciu CNN",
+    "projects.digit.desc":
+      "Wyniki mojej pracy magisterskiej: Klasyfikacja cyfr pisanych odręcznie przy użyciu konwolucyjnej sieci neuronowej (CNN) wyszkolonej na zbiorze danych MNIST.",
+    "projects.viewProject": "Zobacz kod", 
 
     // Contact Section
-    "contact.title": "Skontaktuj się",
+    "contact.title": "Kontakt",
     "contact.description":
       "Zawsze jestem zainteresowany nowymi możliwościami i współpracą. Porozmawiajmy o Twoim następnym projekcie!",
-    "contact.form.name": "Imię",
-    "contact.form.email": "Email",
-    "contact.form.message": "Wiadomość",
-    "contact.form.send": "Wyślij wiadomość",
-    "contact.social": "Połącz się ze mną",
+    "contact.info": "Informacje kontaktowe",
+    "contact.message.title": "Rozpocznijmy współpracę!",
+    "contact.message.description": "Zawsze z entuzjazmem podchodzę do nowych projektów i współpracy z utalentowanymi osobami. Niezależnie od tego, czy potrzebujesz kompletnej aplikacji internetowej, czy chcesz ulepszyć istniejącą platformę, jestem gotowa pomóc Ci zrealizować Twoją wizję.",
+    "contact.followMe": "Obserwuj mnie"
   },
 };

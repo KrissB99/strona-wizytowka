@@ -1,18 +1,20 @@
 "use client";
 
-import Image from "next/image";
-import { Button } from "@/components/shadcn/button";
-import { Github, Linkedin, Mail } from "lucide-react";
-import BlurText from "@/components/react-bits/BlurText";
-import { useLanguage } from "@/contexts/language-context";
 import Link from "next/link";
-import {
-  caprasimoBoldFont,
-  MontserratBoldFont,
-  MontserratFont,
-} from "@/lib/fonts";
-import { Headline3, Paragraph } from "../text";
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+// Components
+import { Button } from "@/components/shadcn/button";
+import BlurText from "@/components/react-bits/BlurText";
+
+// Icons
+import { Github, Linkedin, Mail } from "lucide-react";
+
+// Internal
+import { useLanguage } from "@/contexts/language-context";
+import { Headline3, Paragraph } from "../text";
+import { caprasimoBoldFont, MontserratFont } from "@/lib/fonts";
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -58,11 +60,11 @@ export function HeroSection() {
             className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto text-balace text-violet-600 dark:text-violet-400 ${caprasimoBoldFont.className}`}
           />
           <Headline3
-            text="Frontend Developer"
+            text={t("hero.frontendDeveloper")}
             className="text-3xl text-[#479a89] tracking-wide"
           />
           <Headline3
-            text="with Full Stack & AI Expertise"
+            text={t("hero.frontendDeveloper2")}
             className="text-xl text-[#479a89]"
           />
           <Paragraph

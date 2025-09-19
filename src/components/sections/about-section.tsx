@@ -9,7 +9,6 @@ import { useLanguage } from "@/contexts/language-context";
 
 // Icons
 import { Code, Database, Brain, Zap } from "lucide-react";
-import { caprasimoBoldFont, MontserratFont } from "@/lib/fonts";
 import { Headline2, Headline3, Paragraph } from "../text";
 
 export function AboutSection() {
@@ -40,7 +39,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="md:relative md:h-screen py-12 md:pt-auto md:z-50"
+      className="lg:relative lg:h-screen py-12 lg:pt-auto lg:z-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:py-12 lg:px-8 h-full flex flex-col justify-center">
         <div className="text-center mb-16">

@@ -2,13 +2,18 @@
 
 import type React from "react";
 
+// Components
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/shadcn/card";
+
+// Icons
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+
+// Internal
 import { Headline2, Paragraph } from "../text";
 import { useLanguage } from "@/contexts/language-context";
 
@@ -60,7 +65,7 @@ export function ContactSection() {
           {/* Contact Information */}
           <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
             <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
+              <CardTitle>{t("contact.info")}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {contactInfo.map((info, index) => (
@@ -86,21 +91,18 @@ export function ContactSection() {
 
           <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
             <CardHeader>
-              <CardTitle>Let&#39;s Build Something Amazing</CardTitle>
+              <CardTitle>{t("contact.message.title")}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground text-sm text-pretty">
-                I&#39;m always excited to work on new projects and collaborate
-                with talented individuals. Whether you need a complete web
-                application or want to enhance your existing platform, I&#39;m
-                here to help turn your vision into reality.
+                {t("contact.message.description")}
               </p>
             </CardContent>
           </Card>
 
           <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
             <CardHeader>
-              <CardTitle>Follow Me</CardTitle>
+              <CardTitle>{t("contact.followMe")}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex space-x-4">

@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// Components
 import {
   Card,
   CardContent,
@@ -7,32 +9,29 @@ import {
 } from "@/components/shadcn/card";
 import { Button } from "@/components/shadcn/button";
 import { Badge } from "@/components/shadcn/badge";
+
+// Icons
 import { Github, Link } from "lucide-react";
+
+// Internal
 import { useLanguage } from "@/contexts/language-context";
 import { Headline2, Paragraph } from "../text";
 
 export function ProjectsSection() {
   const { t } = useLanguage();
+
+  // Get translations first
+  const digitTitle = t("projects.digit.title");
+  const digitDesc = t("projects.digit.desc");
+  const churnTitle = t("projects.churn.title");
+  const churnDesc = t("projects.churn.desc");
+  const projectsTitle = t("projects.title");
+  const projectsDescription = t("projects.description");
+
   const projects = [
     {
-      title: t("projects.churn.title"),
-      description: t("projects.churn.desc"),
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg",
-      technologies: [
-        "Flask",
-        "Scikit-Learn",
-        "Next.js",
-        "Tailwind CSS",
-        "Docker",
-        "Docker Compose",
-      ],
-      githubUrl: "https://github.com/KrissB99/Customer-Churn-Prediction",
-      category: "AI/ML",
-    },
-    {
-      title: "Digit Classification Using CNN",
-      description:
-        "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
+      title: digitTitle,
+      description: digitDesc,
       image: "/alexnet-training.png",
       technologies: [
         "Python",
@@ -46,16 +45,35 @@ export function ProjectsSection() {
         "Seaborn",
       ],
       githubUrl: "https://github.com/KrissB99/DigitClassificationUsingCNN",
-      category: "Master's Thesis",
+      category: "AI/ML",
+    },
+    {
+      title: churnTitle,
+      description: churnDesc,
+      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg",
+      technologies: [
+        "Flask",
+        "Scikit-Learn",
+        "Next.js",
+        "Tailwind CSS",
+        "Docker",
+        "Docker Compose",
+      ],
+      githubUrl: "https://github.com/KrissB99/Customer-Churn-Prediction",
+      category: "AI/ML",
     },
   ];
 
+  const openLink = (link: string) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <section id="projects" className="py-20 pt-auto z-50 relative">
+    <section id="projects" className="lg:py-20 lg:pt-auto z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 pt-0">
-          <Headline2 text={t("projects.title")} />
-          <Paragraph text={t("projects.description")} />
+          <Headline2 text={projectsTitle} />
+          <Paragraph text={projectsDescription} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -101,6 +119,7 @@ export function ProjectsSection() {
                     variant="outline"
                     size="sm"
                     className="flex-1 bg-transparent"
+                    onClick={() => openLink(project.githubUrl)}
                   >
                     <Github className="h-4 w-4 mr-2" />
                     Code
@@ -112,11 +131,20 @@ export function ProjectsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            <Link href="https://github.com/KrissB99" target="_blank">
-              <Github className="h-4 w-4 mr-2" />
-              View More on GitHub
-            </Link>
+          <Button
+            variant="outline"
+            size="sm"
+            className="flex-1 bg-transparent"
+            onClick={() =>
+              window.open(
+                "https://github.com/KrissB99",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            <Github className="h-4 w-4 mr-2" />
+            {t("projects.seeMyGithub")}
           </Button>
         </div>
       </div>

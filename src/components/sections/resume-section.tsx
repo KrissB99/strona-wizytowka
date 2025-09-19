@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+
+// Components
 import {
   Card,
   CardContent,
@@ -6,7 +10,11 @@ import {
   CardTitle,
 } from "@/components/shadcn/card";
 import { Badge } from "@/components/shadcn/badge";
+
+//Icons
 import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react";
+
+// Internal
 import { useLanguage } from "@/contexts/language-context";
 import { Headline2 } from "../text";
 
@@ -122,14 +130,14 @@ export function ResumeSection() {
   return (
     <section
       id="resume"
-      className="md:relative md:h-screen py-12 md:pt-auto md:z-50"
+      className="lg:relative lg:h-screen lg:py-12 lg:pt-auto lg:z-50"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-auto py-12">
-        <div className="text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-auto md:py-12">
+        <div className="text-center mb-12">
           <Headline2 text={t("resume.title")} />
         </div>
         {/* Experience */}
-        <div className="flex items-center mb-6">
+        <div className="flex items-center mb-6 ml-6 md:ml-0">
           <Briefcase className="h-5 w-5 text-primary mr-2" />
           <h3 className="text-xl font-semibold text-foreground">
             {t("resume.experience")}
@@ -191,7 +199,7 @@ export function ResumeSection() {
         </div>
 
         {/* Education */}
-        <div className="flex items-center mb-6 mt-12">
+        <div className="flex items-center mb-6 mt-12 ml-6 md:ml-0">
           <GraduationCap className="h-5 w-5 text-primary mr-2" />
           <h3 className="text-xl font-semibold text-foreground">
             {t("resume.education")}
@@ -251,7 +259,7 @@ export function ResumeSection() {
         </div>
 
         {/* Skills */}
-        <div className="flex items-center mb-6 mt-12">
+        <div className="flex items-center mb-6 mt-12 ml-6 md:ml-0">
           <GraduationCap className="h-5 w-5 text-primary mr-2" />
           <h3 className="text-xl font-semibold text-foreground">
             {t("resume.skillset")}

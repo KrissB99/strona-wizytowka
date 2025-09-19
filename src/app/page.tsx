@@ -56,15 +56,15 @@ export default function Home() {
           mouseInteractive={true}
         />
       </div>
-      <div className="flex flex-col md:grid md:grid-cols-3">
+      <div className="flex flex-col lg:grid lg:grid-cols-3">
         <div className="col-span-1">
           <HeroSection />
         </div>
-        <div className="hidden md:block col-span-2 h-screen overflow-auto">
+        <div className="hidden lg:block col-span-2 h-screen overflow-auto">
           {SECTIONS.find((s) => s.key === activeSection)?.component}
         </div>
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <AboutSection />
         <ResumeSection />
         <PortfolioSection />
