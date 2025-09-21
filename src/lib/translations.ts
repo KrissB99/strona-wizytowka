@@ -84,7 +84,7 @@ export const translations = {
     "portfolio.psychologist.desc":
       "A calming and professional website for a psychology practice with online consultation booking and resource library.",
     "portfolio.psychologist.tech":
-    "React, Next.js, Framer Motion, Tailwind CSS",
+      "React, Next.js, Framer Motion, Tailwind CSS",
     "portfolio.thisApsychologistpp.category": "Healthcare",
       
     "portfolio.viewProject": "View Project",
@@ -92,13 +92,13 @@ export const translations = {
     // Project Section
     "projects.title": "Learning Projects",
     "projects.description":
-    "Experiments and apps built to explore new technologies and sharpen my skills.",
+      "Experiments and apps built to explore new technologies and sharpen my skills.",
     "projects.churn.title": "Churn Prediction App",
     "projects.churn.desc":
-    "This full-stack app lets enter customer data and receive churn probability predictions using a trained machine learning model.",
+      "This full-stack app lets enter customer data and receive churn probability predictions using a trained machine learning model.",
     "projects.digit.title": "Digit Classification Using CNN",
     "projects.digit.desc":
-    "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
+      "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
     "projects.viewProject": "View Project", 
       
       // This App

@@ -26,7 +26,7 @@ export function PortfolioSection() {
     {
       title: t("portfolio.dentist.title"),
       description: t("portfolio.dentist.desc"),
-      image: "/dentistry.png",
+      image: "/img/dentistry.png",
       liveUrl: "https://western-somatology.vercel.app",
       category: t("portfolio.dentist.category"),
     },
