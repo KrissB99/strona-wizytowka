@@ -30,9 +30,17 @@ export function ProjectsSection() {
 
   const projects = [
     {
+      title: t("projects.thisApp.title"),
+      description: t("projects.thisApp.desc"),
+      image: "/img/thisApp.png",
+      githubUrl: "https://github.com/KrissB99/strona-wizytowka",
+      category: t("projects.thisApp.category"),
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    },
+    {
       title: digitTitle,
       description: digitDesc,
-      image: "/alexnet-training.png",
+      image: "/img/alexnet-training.png",
       technologies: [
         "Python",
         "Numpy",
@@ -105,8 +113,7 @@ export function ProjectsSection() {
                 <p className="text-muted-foreground text-pretty">
                   {project.description}
                 </p>
-
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-12">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="outline">
                       {tech}
@@ -114,15 +121,14 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                <div className="flex gap-3 pt-4">
+                <div className="absolute bottom-5 right-5 gap-3 pt-4">
                   <Button
-                    variant="outline"
                     size="sm"
-                    className="flex-1 bg-transparent"
+                    className="flex-1 w-full"
                     onClick={() => openLink(project.githubUrl)}
                   >
                     <Github className="h-4 w-4 mr-2" />
-                    Code
+                    {t("projects.viewProject")}
                   </Button>
                 </div>
               </CardContent>

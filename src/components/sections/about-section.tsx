@@ -1,5 +1,3 @@
-"use client";
-
 // Components
 import { Card, CardContent } from "@/components/shadcn/card";
 import { motion } from "framer-motion";

@@ -71,29 +71,41 @@ export const translations = {
     "portfolio.title": "Portfolio",
     "portfolio.description":
       "Showcasing my recent projects and technical expertise",
+
+    // Western stomatology
     "portfolio.dentist.title": "Modern Dental Clinic Website",
     "portfolio.dentist.category": "Healthcare",
     "portfolio.dentist.desc":
       "A professional website for a dental clinic featuring appointment booking, service showcase, and patient testimonials.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
+
+    // Psychology Practice
     "portfolio.psychologist.title": "Psychology Practice Website",
     "portfolio.psychologist.desc":
       "A calming and professional website for a psychology practice with online consultation booking and resource library.",
     "portfolio.psychologist.tech":
-      "React, Next.js, Framer Motion, Tailwind CSS",
+    "React, Next.js, Framer Motion, Tailwind CSS",
+    "portfolio.thisApsychologistpp.category": "Healthcare",
+      
     "portfolio.viewProject": "View Project",
-
+      
     // Project Section
     "projects.title": "Learning Projects",
     "projects.description":
-      "Experiments and apps built to explore new technologies and sharpen my skills.",
+    "Experiments and apps built to explore new technologies and sharpen my skills.",
     "projects.churn.title": "Churn Prediction App",
     "projects.churn.desc":
-      "This full-stack app lets enter customer data and receive churn probability predictions using a trained machine learning model.",
+    "This full-stack app lets enter customer data and receive churn probability predictions using a trained machine learning model.",
     "projects.digit.title": "Digit Classification Using CNN",
     "projects.digit.desc":
-      "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
+    "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
     "projects.viewProject": "View Project", 
+      
+      // This App
+    "projects.thisApp.title": "My Personal Portfolio Website",
+    "projects.thisApp.category": "Personal",
+    "projects.thisApp.desc":
+      "This very website you're visiting! Built to showcase my skills, projects, and experience as a developer.",
     "projects.seeMyGithub": "See my Github Profile",
 
     // Contact Section
@@ -118,7 +130,7 @@ export const translations = {
     "hero.title": "Frontend, z doświadczeniem w Full-Stack oraz AI",
     "hero.tagline":
       "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii tj. React.js, Next.js, Tailwind CSS i aplikacjach opartych na sztucznej inteligencji.",
-        "hero.frontendDeveloper": "Programistka Frontend",
+    "hero.frontendDeveloper": "Programistka Frontend",
     "hero.frontendDeveloper2": "z doświadczeniem w Full Stack & AI",
 
     // About Section
@@ -175,33 +187,44 @@ export const translations = {
     "portfolio.title": "Portfolio",
     "portfolio.description":
       "Prezentacja moich ostatnich projektów i umiejętności technicznych",
+
+    // Western stomatology
     "portfolio.dentist.title": "Strona nowoczesnej kliniki dentystycznej",
     "portfolio.dentist.category": "Zdrowie",
     "portfolio.dentist.desc":
       "Profesjonalna strona internetowa dla kliniki dentystycznej z funkcją rezerwacji wizyt, prezentacją usług i opiniami pacjentów.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
+
+    // Psychology Practice
     "portfolio.psychologist.title": "Strona gabinetu psychologicznego",
     "portfolio.psychologist.desc":
       "Spokojna i profesjonalna strona dla gabinetu psychologicznego z możliwością rezerwacji konsultacji online i biblioteką zasobów.",
     "portfolio.psychologist.tech":
       "React, Next.js, Framer Motion, Tailwind CSS",
+      
     "portfolio.viewProject": "Zobacz projekt",
     "projects.seeMyGithub": "Zobacz mojego Githuba",
-    
-
+      
     // Project Section
     "projects.title": "Moje Projekty",
     "projects.description":
-      "Eksperymenty i aplikacje stworzone w celu zgłębiania nowych technologii i doskonalenia moich umiejętności.",
+    "Eksperymenty i aplikacje stworzone w celu zgłębiania nowych technologii i doskonalenia moich umiejętności.",
     "projects.churn.title": "Aplikacja do przewidywania",
     "projects.churn.desc":
-      "Ta aplikacja typu full-stack umożliwia wprowadzanie danych klientów i otrzymywanie prognoz dotyczących prawdopodobieństwa odejścia klientów przy użyciu wyszkolonego modelu uczenia maszynowego.",
+    "Ta aplikacja typu full-stack umożliwia wprowadzanie danych klientów i otrzymywanie prognoz dotyczących prawdopodobieństwa odejścia klientów przy użyciu wyszkolonego modelu uczenia maszynowego.",
     "projects.digit.title": "Klasyfikacja cyfr przy użyciu CNN",
     "projects.digit.desc":
       "Wyniki mojej pracy magisterskiej: Klasyfikacja cyfr pisanych odręcznie przy użyciu konwolucyjnej sieci neuronowej (CNN) wyszkolonej na zbiorze danych MNIST.",
+      
+    // This App
+    "projects.thisApp.title": "Moja Strona Wizytówka",
+    "projects.thisApp.category": "Strona osobista",
+    "projects.thisApp.desc":
+      "Ta strona, na której właśnie jesteś! Stworzona, aby zaprezentować moje umiejętności, projekty i doświadczenie jako programistka.",
+        
     "projects.viewProject": "Zobacz kod", 
-
-    // Contact Section
+      
+      // Contact Section
     "contact.title": "Kontakt",
     "contact.description":
       "Zawsze jestem zainteresowany nowymi możliwościami i współpracą. Porozmawiajmy o Twoim następnym projekcie!",
