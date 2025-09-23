@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Krystyna Banaszewska - Frontend Developer",
   description:
     "Professional Frontend Developer with Full-Stack and AI expertise. Building modern web applications with cutting-edge technologies.",
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || "",
+  },
 };
 
 export default function RootLayout({
@@ -24,12 +27,6 @@ export default function RootLayout({
   return (
     <LanguageProvider>
       <HtmlWrapper>
-        <Head>
-          <meta
-            name="google-site-verification"
-            content={process.env.GOOGLE_SITE_VERIFICATION || ""}
-          />
-        </Head>
         <body
           className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}
         >
