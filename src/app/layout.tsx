@@ -8,7 +8,6 @@ import { LanguageProvider } from "@/contexts/language-context";
 import { ThemeProvider } from "@/contexts/theme-context";
 import "./globals.css";
 import { HtmlWrapper } from "@/components/html-wrapper";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Krystyna Banaszewska - Frontend Developer",

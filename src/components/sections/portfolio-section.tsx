@@ -27,7 +27,7 @@ export function PortfolioSection() {
       title: t("portfolio.dentist.title"),
       description: t("portfolio.dentist.desc"),
       image: "/img/dentistry.png",
-      liveUrl: "https://western-somatology.vercel.app",
+      liveUrl: "https://www.stomatologzachodnia.pl",
       category: t("portfolio.dentist.category"),
     },
     // {
@@ -63,8 +63,8 @@ export function PortfolioSection() {
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  width={200}
-                  height={200}
+                  width={600}
+                  height={300}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
