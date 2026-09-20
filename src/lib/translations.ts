@@ -22,7 +22,7 @@ export const translations = {
     "about.skill1": "Frontend Development",
     "about.skill2": "Full-Stack Development",
     "about.skill3": "AI Integration",
-    "about.skill4": "Performance Optimization", 
+    "about.skill4": "Performance Optimization",
     "about.skill1Desc":
       "Expert in React, Next.js, TypeScript, and modern CSS frameworks like Tailwind CSS.",
     "about.skill2Desc":
@@ -31,8 +31,8 @@ export const translations = {
       "Experience with AI APIs, machine learning models, and intelligent user interfaces.",
     "about.skill4Desc":
       "Focused on creating fast, accessible, and SEO-optimized web applications.",
-    
-      // Resume Section
+
+    // Resume Section
     "resume.title": "Resume",
     "resume.education": "Education",
     "resume.experience": "Work Experience",
@@ -76,7 +76,7 @@ export const translations = {
     "portfolio.dentist.title": "Modern Dental Clinic Website",
     "portfolio.dentist.category": "Healthcare",
     "portfolio.dentist.desc":
-      "A professional website for a dental clinic featuring appointment booking, service showcase, and patient testimonials.",
+      "A professional website for a dental clinic featuring services, dentists, pricing, clinic description, and patient testimonials.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
 
     // Psychology Practice
@@ -86,9 +86,9 @@ export const translations = {
     "portfolio.psychologist.tech":
       "React, Next.js, Framer Motion, Tailwind CSS",
     "portfolio.thisApsychologistpp.category": "Healthcare",
-      
+
     "portfolio.viewProject": "View Project",
-      
+
     // Project Section
     "projects.title": "Learning Projects",
     "projects.description":
@@ -99,13 +99,18 @@ export const translations = {
     "projects.digit.title": "Digit Classification Using CNN",
     "projects.digit.desc":
       "The results of my Master's Thesis project: Classification of handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.",
-    "projects.viewProject": "View Project", 
-      
-      // This App
+    "projects.viewProject": "View Project",
+
+    // This App
     "projects.thisApp.title": "My Personal Portfolio Website",
     "projects.thisApp.category": "Personal",
     "projects.thisApp.desc":
       "This very website you're visiting! Built to showcase my skills, projects, and experience as a developer.",
+    "projects.time4it.title": "Order Management Dashboard",
+    "projects.time4it.category": "Recruitment Task",
+    "projects.time4it.desc":
+      "A recruitment task built for a startup: an order management dashboard with sortable columns, configurable views, status badges, and pagination.",
+    "projects.viewLive": "View Live",
     "projects.seeMyGithub": "See my Github Profile",
 
     // Contact Section
@@ -140,7 +145,7 @@ export const translations = {
     "about.skill1": "Programowanie Frontend",
     "about.skill2": "Programowanie Full-Stack",
     "about.skill3": "Integracja AI",
-    "about.skill4": "Optymalizacja wydajności", 
+    "about.skill4": "Optymalizacja wydajności",
     "about.skill1Desc":
       "Ekspert w React, Next.js, TypeScript oraz nowoczesnych frameworkach CSS takich jak Tailwind CSS.",
     "about.skill2Desc":
@@ -149,8 +154,8 @@ export const translations = {
       "Doświadczenie z API AI, modelami uczenia maszynowego i inteligentnymi interfejsami użytkownika.",
     "about.skill4Desc":
       "Skupiam się na tworzeniu szybkich, dostępnych i zoptymalizowanych pod SEO aplikacji webowych.",
-    
-      // Resume Section
+
+    // Resume Section
     "resume.title": "Curriculum vitae",
     "resume.education": "Wykształcenie",
     "resume.experience": "Doświadczenie",
@@ -192,7 +197,7 @@ export const translations = {
     "portfolio.dentist.title": "Strona nowoczesnej kliniki dentystycznej",
     "portfolio.dentist.category": "Zdrowie",
     "portfolio.dentist.desc":
-      "Profesjonalna strona internetowa dla kliniki dentystycznej z funkcją rezerwacji wizyt, prezentacją usług i opiniami pacjentów.",
+      "Profesjonalna strona internetowa dla kliniki dentystycznej z prezentacją usług, lekarzy, wraz z cennikiem i opiniami pacjentów.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
 
     // Psychology Practice
@@ -201,30 +206,35 @@ export const translations = {
       "Spokojna i profesjonalna strona dla gabinetu psychologicznego z możliwością rezerwacji konsultacji online i biblioteką zasobów.",
     "portfolio.psychologist.tech":
       "React, Next.js, Framer Motion, Tailwind CSS",
-      
+
     "portfolio.viewProject": "Zobacz projekt",
     "projects.seeMyGithub": "Zobacz mojego Githuba",
-      
+
     // Project Section
     "projects.title": "Moje Projekty",
     "projects.description":
-    "Eksperymenty i aplikacje stworzone w celu zgłębiania nowych technologii i doskonalenia moich umiejętności.",
+      "Eksperymenty i aplikacje stworzone w celu zgłębiania nowych technologii i doskonalenia moich umiejętności.",
     "projects.churn.title": "Aplikacja do przewidywania",
     "projects.churn.desc":
-    "Ta aplikacja typu full-stack umożliwia wprowadzanie danych klientów i otrzymywanie prognoz dotyczących prawdopodobieństwa odejścia klientów przy użyciu wyszkolonego modelu uczenia maszynowego.",
+      "Ta aplikacja typu full-stack umożliwia wprowadzanie danych klientów i otrzymywanie prognoz dotyczących prawdopodobieństwa odejścia klientów przy użyciu wyszkolonego modelu uczenia maszynowego.",
     "projects.digit.title": "Klasyfikacja cyfr przy użyciu CNN",
     "projects.digit.desc":
       "Wyniki mojej pracy magisterskiej: Klasyfikacja cyfr pisanych odręcznie przy użyciu konwolucyjnej sieci neuronowej (CNN) wyszkolonej na zbiorze danych MNIST.",
-      
+
     // This App
-    "projects.thisApp.title": "Moja Strona Wizytówka",
+    "projects.thisApp.title": "Strona Personalna",
     "projects.thisApp.category": "Strona osobista",
     "projects.thisApp.desc":
       "Ta strona, na której właśnie jesteś! Stworzona, aby zaprezentować moje umiejętności, projekty i doświadczenie jako programistka.",
-        
-    "projects.viewProject": "Zobacz kod", 
-      
-      // Contact Section
+    "projects.time4it.title": "Panel zarządzania zamówieniami",
+    "projects.time4it.category": "Zadanie rekrutacyjne",
+    "projects.time4it.desc":
+      "Zadanie rekrutacyjne stworzone dla startupu: panel zarządzania zamówieniami z sortowaniem kolumn, konfigurowalnym widokiem, statusami i paginacją.",
+    "projects.viewLive": "Zobacz na żywo",
+
+    "projects.viewProject": "Zobacz kod",
+
+    // Contact Section
     "contact.title": "Kontakt",
     "contact.description":
       "Zawsze jestem zainteresowany nowymi możliwościami i współpracą. Porozmawiajmy o Twoim następnym projekcie!",

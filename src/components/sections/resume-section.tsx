@@ -165,7 +165,7 @@ export function ResumeSection() {
                       {exp.title}
                     </CardTitle>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                      <span className="font-medium text-violet-700 dark:text-violet-400">
+                      <span className="font-medium text-pink-700 dark:text-pink-400">
                         {exp.company}
                       </span>
                       <div className="flex items-center gap-4">
@@ -227,7 +227,7 @@ export function ResumeSection() {
                       {edu.degree}
                     </CardTitle>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                      <span className="font-medium text-violet-700 dark:text-violet-400">
+                      <span className="font-medium text-pink-700 dark:text-pink-400">
                         {edu.school}
                       </span>
                       <div className="flex items-center gap-4">

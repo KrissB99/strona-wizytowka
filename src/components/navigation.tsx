@@ -37,7 +37,7 @@ export function Navigation({
   return (
     <nav className="fixed top-0 left-0 right-0 z-100">
       <div className="mx-auto">
-        <div className="flex justify-between items-center h-16 bg-violet-300/10 md:bg-transparent backdrop-blur-3xl md:backdrop-blur-none px-6 md:px-12">
+        <div className="flex justify-between items-center h-16 bg-pink-300/10 md:bg-transparent backdrop-blur-3xl md:backdrop-blur-none px-6 md:px-12">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             <motion.div
@@ -51,13 +51,11 @@ export function Navigation({
                   <Button
                     variant="link"
                     onClick={() => setActiveSection(section.key)}
-                    className={`text-sm font-medium transition-colors drop-shadow-sm drop-shadow-violet-100 dark:drop-shadow-violet-950 hover:text-violet-800/90 dark:hover:text-violet-200/90 ${
-                      caprasimoBoldFont.className
-                    } ${
-                      activeSection === section.key
-                        ? "text-violet-600 dark:text-violet-400 underline underline-offset-4"
+                    className={`text-sm font-medium transition-colors drop-shadow-sm drop-shadow-pink-100 dark:drop-shadow-pink-950 hover:text-pink-800/90 dark:hover:text-pink-200/90 ${caprasimoBoldFont.className
+                      } ${activeSection === section.key
+                        ? "text-pink-600 dark:text-pink-400 underline underline-offset-4"
                         : "text-primary/80"
-                    }`}
+                      }`}
                   >
                     {section.label}
                   </Button>
@@ -98,11 +96,10 @@ export function Navigation({
                     setActiveSection(item.key);
                     scrollToSection(item.key);
                   }}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
-                    activeSection === item.key
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${activeSection === item.key
                       ? "text-primary"
                       : "text-muted-foreground"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>

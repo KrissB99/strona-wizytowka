@@ -37,7 +37,7 @@ export function HeroSection() {
         <div className="mb-8">
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300">
             <Image
-              src="/Me.png"
+              src="/Me.jpeg"
               alt="Krysia Banaszewska"
               width={300}
               height={300}
@@ -45,27 +45,27 @@ export function HeroSection() {
               priority
             />
           </div>
-          <BlurText
+          {/* <BlurText
             text={t("hero.greeting")}
             delay={150}
             animateBy="words"
             direction="top"
             className={`text-4xl sm:text-3xl md:text-4xl mx-auto text-balace ${MontserratFont.className}`}
-          />
+          /> */}
           <BlurText
             text={"Krystyna Banaszewska"}
             delay={150}
             animateBy="words"
             direction="top"
-            className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto text-balace text-violet-600 dark:text-violet-400 ${caprasimoBoldFont.className}`}
+            className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto dark:text-balace text-[#f20089] dark:text-[#f09bcb] ${caprasimoBoldFont.className}`}
           />
           <Headline3
             text={t("hero.frontendDeveloper")}
-            className="text-3xl text-[#479a89] tracking-wide"
+            className="text-3xl dark:text-[#5bbab5] text-[#564148] tracking-wide"
           />
           <Headline3
             text={t("hero.frontendDeveloper2")}
-            className="text-xl text-[#479a89]"
+            className="text-xl dark:text-[#5bbab5] text-[#564148]"
           />
           <Paragraph
             text={t("hero.tagline")}

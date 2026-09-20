@@ -58,8 +58,8 @@ export function AboutSection() {
             >
               <Card className="transition-all duration-300 bg-white/20 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-violet-500/20 flex items-center justify-center group-hover:bg-violet-500/40 transition-colors">
-                    <skill.icon className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-pink-500/20 flex items-center justify-center group-hover:bg-pink-500/40 transition-colors">
+                    <skill.icon className="h-6 w-6 text-pink-500" />
                   </div>
                   <Headline3 text={skill.title} />
                   <Paragraph text={skill.description} />

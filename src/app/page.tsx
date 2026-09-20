@@ -12,7 +12,7 @@ import { ProjectsSection } from "@/components/sections/self-projects";
 
 // Components
 import { Navigation } from "@/components/navigation";
-import Plasma from "@/components/react-bits/Plasma";
+import { AnimatedGradient } from "@/components/ui/animated-gradient";
 import { useTheme } from "@/contexts/theme-context";
 import { useLanguage } from "@/contexts/language-context";
 import { TechnologySection } from "@/components/sections/skills-section";
@@ -47,13 +47,19 @@ export default function Home() {
         sections={SECTIONS}
       />
       <div className="absolute w-full h-full z-2">
-        <Plasma
-          color={theme === "light" ? "#F2F1D6" : "#FEFEDF"}
-          speed={0.6}
-          direction="forward"
-          scale={1.1}
-          opacity={0.8}
-          mouseInteractive={true}
+        <AnimatedGradient
+          config={
+            theme === "light"
+              ? {
+                preset: "custom",
+                color1: "#f1ede8",
+                color2: "#c0fcf7",
+                color3: "#48817d",
+                speed: 8,
+              }
+              : { preset: "Oceanic", speed: 8 }
+          }
+          noise={{ opacity: 0.15 }}
         />
       </div>
       <div className="flex flex-col lg:grid lg:grid-cols-3">
