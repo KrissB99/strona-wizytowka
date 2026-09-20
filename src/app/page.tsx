@@ -53,13 +53,13 @@ export default function Home() {
               ? {
                 preset: "custom",
                 color1: "#f1ede8",
-                color2: "#e6ddf5",
-                color3: "#7c3aed",
-                speed: 5,
+                color2: "#c0fcf7",
+                color3: "#48817d",
+                speed: 8,
               }
-              : { preset: "Aurora", speed: 5 }
+              : { preset: "Aurora", speed: 8 }
           }
-          noise={{ opacity: 0.30 }}
+          noise={{ opacity: 0.15 }}
         />
       </div>
       <div className="flex flex-col lg:grid lg:grid-cols-3">
