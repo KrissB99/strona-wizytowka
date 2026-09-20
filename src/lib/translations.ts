@@ -76,7 +76,7 @@ export const translations = {
     "portfolio.dentist.title": "Modern Dental Clinic Website",
     "portfolio.dentist.category": "Healthcare",
     "portfolio.dentist.desc":
-      "A professional website for a dental clinic featuring appointment booking, service showcase, and patient testimonials.",
+      "A professional website for a dental clinic featuring services, dentists, pricing, clinic description, and patient testimonials.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
 
     // Psychology Practice
@@ -192,7 +192,7 @@ export const translations = {
     "portfolio.dentist.title": "Strona nowoczesnej kliniki dentystycznej",
     "portfolio.dentist.category": "Zdrowie",
     "portfolio.dentist.desc":
-      "Profesjonalna strona internetowa dla kliniki dentystycznej z funkcją rezerwacji wizyt, prezentacją usług i opiniami pacjentów.",
+      "Profesjonalna strona internetowa dla kliniki dentystycznej z prezentacją usług, lekarzy, wraz z cennikiem i opiniami pacjentów.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
 
     // Psychology Practice
