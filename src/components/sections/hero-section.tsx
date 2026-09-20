@@ -57,7 +57,7 @@ export function HeroSection() {
             delay={150}
             animateBy="words"
             direction="top"
-            className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto text-balace dark:text-[#f20089] ${caprasimoBoldFont.className}`}
+            className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto dark:text-balace text-[#52646A] ${caprasimoBoldFont.className}`}
           />
           <Headline3
             text={t("hero.frontendDeveloper")}
