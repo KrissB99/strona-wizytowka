@@ -57,7 +57,7 @@ export default function Home() {
                 color3: "#48817d",
                 speed: 8,
               }
-              : { preset: "Aurora", speed: 8 }
+              : { preset: "Oceanic", speed: 8 }
           }
           noise={{ opacity: 0.15 }}
         />

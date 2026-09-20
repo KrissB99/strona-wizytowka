@@ -49,7 +49,7 @@ const presets: Record<PresetName, PresetParams> = {
     Oceanic: {
         color1: "#000814",
         color2: "#001d3d",
-        color3: "#00b4d8",
+        color3: "#007a8a",
         rotation: 0,
         proportion: 70,
         scale: 0.4,

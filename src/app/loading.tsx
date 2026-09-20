@@ -6,7 +6,7 @@ export default function LoadingPage() {
       <div className="flex flex-col items-center space-y-8">
         {/* Animated dots */}
         <LoaderCircle
-          className="text-violet-500 animate-spin bg-gradient animate-colors"
+          className="text-pink-500 animate-spin bg-gradient animate-colors"
           size={64}
         />
         {/* Loading text with fade animation */}
