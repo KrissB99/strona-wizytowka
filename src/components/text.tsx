@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 export function Headline2({ text }: { text: string }) {
   return (
     <h2
-      className={`text-3xl sm:text-4xl font-bold text-[#f20089] dark:text-[#f20089] mb-4 ${caprasimoBoldFont.className}`}
+      className={`text-3xl sm:text-4xl font-bold text-[#f20089] dark:text-[#f09bcb] mb-4 ${caprasimoBoldFont.className}`}
     >
       {text}
     </h2>

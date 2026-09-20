@@ -58,7 +58,7 @@ export function ProjectsSection() {
     {
       title: churnTitle,
       description: churnDesc,
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg",
+      image: "/img/churn-prediction.png",
       technologies: [
         "Flask",
         "Scikit-Learn",
