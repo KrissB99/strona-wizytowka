@@ -88,7 +88,8 @@ export function ProjectsSection() {
     },
   ];
 
-  const openLink = (link: string) => {
+  const openLink = (link?: string) => {
+    if (!link) return;
     window.open(link, "_blank", "noopener,noreferrer");
   };
 
