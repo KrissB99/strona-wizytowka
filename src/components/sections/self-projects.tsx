@@ -88,7 +88,7 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="hover:shadow-md transition-shadow pt-0 bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40"
+              className="group hover:shadow-md transition-shadow pt-0 overflow-hidden bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40"
             >
               <div className="relative overflow-hidden">
                 <Image
