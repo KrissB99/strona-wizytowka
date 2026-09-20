@@ -106,6 +106,11 @@ export const translations = {
     "projects.thisApp.category": "Personal",
     "projects.thisApp.desc":
       "This very website you're visiting! Built to showcase my skills, projects, and experience as a developer.",
+    "projects.time4it.title": "Order Management Dashboard",
+    "projects.time4it.category": "Recruitment Task",
+    "projects.time4it.desc":
+      "A recruitment task built for a startup: an order management dashboard with sortable columns, configurable views, status badges, and pagination.",
+    "projects.viewLive": "View Live",
     "projects.seeMyGithub": "See my Github Profile",
 
     // Contact Section
@@ -221,6 +226,11 @@ export const translations = {
     "projects.thisApp.category": "Strona osobista",
     "projects.thisApp.desc":
       "Ta strona, na której właśnie jesteś! Stworzona, aby zaprezentować moje umiejętności, projekty i doświadczenie jako programistka.",
+    "projects.time4it.title": "Panel zarządzania zamówieniami",
+    "projects.time4it.category": "Zadanie rekrutacyjne",
+    "projects.time4it.desc":
+      "Zadanie rekrutacyjne stworzone dla startupu: panel zarządzania zamówieniami z sortowaniem kolumn, konfigurowalnym widokiem, statusami i paginacją.",
+    "projects.viewLive": "Zobacz na żywo",
 
     "projects.viewProject": "Zobacz kod",
 

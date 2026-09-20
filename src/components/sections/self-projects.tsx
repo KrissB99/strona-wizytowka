@@ -28,7 +28,15 @@ export function ProjectsSection() {
   const projectsTitle = t("projects.title");
   const projectsDescription = t("projects.description");
 
-  const projects = [
+  const projects: {
+    title: string;
+    description: string;
+    image: string;
+    technologies: string[];
+    category: string;
+    githubUrl?: string;
+    liveUrl?: string;
+  }[] = [
     {
       title: t("projects.thisApp.title"),
       description: t("projects.thisApp.desc"),
@@ -69,6 +77,14 @@ export function ProjectsSection() {
       ],
       githubUrl: "https://github.com/KrissB99/Customer-Churn-Prediction",
       category: "AI/ML",
+    },
+    {
+      title: t("projects.time4it.title"),
+      description: t("projects.time4it.desc"),
+      image: "/img/time4it-recruitment.png",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+      liveUrl: "https://time4-it-rekru-app.vercel.app",
+      category: t("projects.time4it.category"),
     },
   ];
 
@@ -122,14 +138,25 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="absolute bottom-5 right-5 gap-3 pt-4">
-                  <Button
-                    size="sm"
-                    className="flex-1 w-full"
-                    onClick={() => openLink(project.githubUrl)}
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    {t("projects.viewProject")}
-                  </Button>
+                  {project.liveUrl ? (
+                    <Button
+                      size="sm"
+                      className="flex-1 w-full"
+                      onClick={() => openLink(project.liveUrl)}
+                    >
+                      <Link className="h-4 w-4 mr-2" />
+                      {t("projects.viewLive")}
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      className="flex-1 w-full"
+                      onClick={() => openLink(project.githubUrl)}
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      {t("projects.viewProject")}
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
