@@ -51,15 +51,15 @@ export default function Home() {
           config={
             theme === "light"
               ? {
-                  preset: "custom",
-                  color1: "#f1ede8",
-                  color2: "#e6ddf5",
-                  color3: "#7c3aed",
-                  speed: 12,
-                }
-              : { preset: "Aurora", speed: 12 }
+                preset: "custom",
+                color1: "#f1ede8",
+                color2: "#e6ddf5",
+                color3: "#7c3aed",
+                speed: 5,
+              }
+              : { preset: "Aurora", speed: 5 }
           }
-          noise={{ opacity: 0.15 }}
+          noise={{ opacity: 0.30 }}
         />
       </div>
       <div className="flex flex-col lg:grid lg:grid-cols-3">

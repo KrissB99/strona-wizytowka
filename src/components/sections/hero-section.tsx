@@ -37,7 +37,7 @@ export function HeroSection() {
         <div className="mb-8">
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300">
             <Image
-              src="/Me.png"
+              src="/Me.jpeg"
               alt="Krysia Banaszewska"
               width={300}
               height={300}

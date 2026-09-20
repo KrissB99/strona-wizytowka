@@ -1,7 +1,19 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Space_Grotesk, Inter } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans-base",
+  display: "swap",
+});
 import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import { LanguageProvider } from "@/contexts/language-context";
@@ -27,7 +39,7 @@ export default function RootLayout({
     <LanguageProvider>
       <HtmlWrapper>
         <body
-          className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}
+          className={`font-sans ${inter.variable} ${spaceGrotesk.variable} ${GeistMono.variable} antialiased`}
         >
           <ThemeProvider>
             <Suspense fallback={null}>{children}</Suspense>
