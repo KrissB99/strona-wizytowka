@@ -57,7 +57,7 @@ export function PortfolioSection() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 overflow-hidden pt-0 bg-white/50 dark:bg-black/10 backdrop-blur-3xl border-0 dark:border dark:border-border/50 hover:bg-white/40 hover:dark:bg-black/40 mx-4 md:w-[60%] lg:w-[50%]"
+              className="group hover:shadow-xl transition-all duration-300 overflow-hidden pt-0 bg-card/70 backdrop-blur-xl border border-border hover:bg-card mx-4 md:w-[60%] lg:w-[50%]"
             >
               <div className="relative overflow-hidden">
                 <Image

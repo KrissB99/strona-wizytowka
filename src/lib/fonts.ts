@@ -1,18 +1,16 @@
-import { Caprasimo } from "next/font/google";
-import { Montserrat } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 
-export const caprasimoBoldFont = Caprasimo({
-  subsets: ["latin"],
-  weight: "400",
+// Display / headings — editorial serif with optical sizing
+export const fraunces = Fraunces({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-fraunces",
+  axes: ["opsz"],
+  display: "swap",
 });
 
-export const MontserratBoldFont = Montserrat({         
-  subsets: ["latin"],
-  weight: "600",
+// Body / UI text
+export const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
 });
-
-export const MontserratFont = Montserrat({         
-  subsets: ["latin"],
-  weight: "400",
-});
-

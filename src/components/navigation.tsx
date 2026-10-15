@@ -9,8 +9,6 @@ import { Button } from "@/components/shadcn/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "./language-toggle";
 
-// Fonts
-import { caprasimoBoldFont } from "@/lib/fonts";
 import { motion } from "framer-motion";
 
 interface NavigationProps {
@@ -37,7 +35,7 @@ export function Navigation({
   return (
     <nav className="fixed top-0 left-0 right-0 z-100">
       <div className="mx-auto">
-        <div className="flex justify-between items-center h-16 bg-pink-300/10 md:bg-transparent backdrop-blur-3xl md:backdrop-blur-none px-6 md:px-12">
+        <div className="flex justify-between items-center h-16 bg-background/80 md:bg-transparent backdrop-blur-xl md:backdrop-blur-none px-6 md:px-12">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             <motion.div
@@ -51,10 +49,9 @@ export function Navigation({
                   <Button
                     variant="link"
                     onClick={() => setActiveSection(section.key)}
-                    className={`text-sm font-medium transition-colors drop-shadow-sm drop-shadow-pink-100 dark:drop-shadow-pink-950 hover:text-pink-800/90 dark:hover:text-pink-200/90 ${caprasimoBoldFont.className
-                      } ${activeSection === section.key
-                        ? "text-pink-600 dark:text-pink-400 underline underline-offset-4"
-                        : "text-primary/80"
+                    className={`text-sm font-medium transition-colors hover:text-foreground ${activeSection === section.key
+                        ? "text-primary underline underline-offset-8 decoration-1"
+                        : "text-muted-foreground"
                       }`}
                   >
                     {section.label}
@@ -88,7 +85,7 @@ export function Navigation({
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/20 dark:bg-black/20 backdrop-blur-3xl border-t border-border rounded-2xl">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/90 backdrop-blur-xl border border-border rounded-2xl">
               {sections.map((item, index) => (
                 <button
                   key={index}

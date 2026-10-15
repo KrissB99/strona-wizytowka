@@ -30,7 +30,7 @@ export function ContactSection() {
       icon: Phone,
       label: "Phone",
       value: "+48 505-368-902",
-      href: "tel:+505368902",
+      href: "tel:+48505368902",
     },
     {
       icon: MapPin,
@@ -44,12 +44,12 @@ export function ContactSection() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/johndoe",
+      href: "https://github.com/KrissB99",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://www.linkedin.com/in/krystyna-banaszewska/",
     },
   ];
 
@@ -63,7 +63,7 @@ export function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+          <Card className="hover:shadow-md transition-shadow bg-card/70 backdrop-blur-xl border border-border hover:bg-card">
             <CardHeader>
               <CardTitle>{t("contact.info")}</CardTitle>
             </CardHeader>
@@ -89,7 +89,7 @@ export function ContactSection() {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+          <Card className="hover:shadow-md transition-shadow bg-card/70 backdrop-blur-xl border border-border hover:bg-card">
             <CardHeader>
               <CardTitle>{t("contact.message.title")}</CardTitle>
             </CardHeader>
@@ -100,7 +100,7 @@ export function ContactSection() {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+          <Card className="hover:shadow-md transition-shadow bg-card/70 backdrop-blur-xl border border-border hover:bg-card">
             <CardHeader>
               <CardTitle>{t("contact.followMe")}</CardTitle>
             </CardHeader>

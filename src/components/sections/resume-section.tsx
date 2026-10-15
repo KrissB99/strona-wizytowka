@@ -139,7 +139,7 @@ export function ResumeSection() {
         {/* Experience */}
         <div className="flex items-center mb-6 ml-6 md:ml-0">
           <Briefcase className="h-5 w-5 text-primary mr-2" />
-          <h3 className="text-xl font-semibold text-foreground">
+          <h3 className="font-display text-2xl text-foreground">
             {t("resume.experience")}
           </h3>
         </div>
@@ -147,7 +147,7 @@ export function ResumeSection() {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/80 hover:dark:bg-black/80"
+              className="hover:shadow-md transition-shadow bg-card/70 backdrop-blur-xl border border-border hover:bg-card"
             >
               <CardHeader>
                 <div className="flex items-start gap-4">
@@ -165,7 +165,7 @@ export function ResumeSection() {
                       {exp.title}
                     </CardTitle>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                      <span className="font-medium text-pink-700 dark:text-pink-400">
+                      <span className="font-medium text-primary">
                         {exp.company}
                       </span>
                       <div className="flex items-center gap-4">
@@ -183,7 +183,7 @@ export function ResumeSection() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="space-y-1 text-gray-700 list-none dark:text-gray-50 mb-3 text-pretty">
+                <p className="space-y-1 text-foreground/80 list-none mb-3 text-pretty">
                   {exp.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -201,7 +201,7 @@ export function ResumeSection() {
         {/* Education */}
         <div className="flex items-center mb-6 mt-12 ml-6 md:ml-0">
           <GraduationCap className="h-5 w-5 text-primary mr-2" />
-          <h3 className="text-xl font-semibold text-foreground">
+          <h3 className="font-display text-2xl text-foreground">
             {t("resume.education")}
           </h3>
         </div>
@@ -209,7 +209,7 @@ export function ResumeSection() {
           {education.map((edu, index) => (
             <Card
               key={index}
-              className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/80 hover:dark:bg-black/80"
+              className="hover:shadow-md transition-shadow bg-card/70 backdrop-blur-xl border border-border hover:bg-card"
             >
               <CardHeader>
                 <div className="flex items-start gap-4">
@@ -227,7 +227,7 @@ export function ResumeSection() {
                       {edu.degree}
                     </CardTitle>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                      <span className="font-medium text-pink-700 dark:text-pink-400">
+                      <span className="font-medium text-primary">
                         {edu.school}
                       </span>
                       <div className="flex items-center gap-4">
@@ -245,7 +245,7 @@ export function ResumeSection() {
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-1 text-gray-700 list-none dark:text-gray-50">
+                <ul className="space-y-1 text-foreground/80 list-none">
                   <li>{edu.description}</li>
                   <li>
                     <span className="font-bold">{t("resume.field")}: </span>
@@ -261,19 +261,18 @@ export function ResumeSection() {
         {/* Skills */}
         <div className="flex items-center mb-6 mt-12 ml-6 md:ml-0">
           <GraduationCap className="h-5 w-5 text-primary mr-2" />
-          <h3 className="text-xl font-semibold text-foreground">
+          <h3 className="font-display text-2xl text-foreground">
             {t("resume.skillset")}
           </h3>
         </div>
         <div className="space-y-6">
-          <Card className="hover:shadow-md transition-shadow bg-white/50 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/80 hover:dark:bg-black/80">
+          <Card className="hover:shadow-md transition-shadow bg-card/70 backdrop-blur-xl border border-border hover:bg-card">
             <CardContent className="p-6">
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
                   <Badge
                     key={index}
                     variant="secondary"
-                    className="bg-[#479a89]/40 hover:bg-[#479a89]/80 transition-colors"
                   >
                     {skill}
                   </Badge>

@@ -1,17 +1,10 @@
 "use client";
 
-import {
-  caprasimoBoldFont,
-  MontserratBoldFont,
-  MontserratFont,
-} from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
 export function Headline2({ text }: { text: string }) {
   return (
-    <h2
-      className={`text-3xl sm:text-4xl font-bold text-[#f20089] dark:text-[#f09bcb] mb-4 ${caprasimoBoldFont.className}`}
-    >
+    <h2 className="font-display text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-4">
       {text}
     </h2>
   );
@@ -27,7 +20,7 @@ export function Headline3({
   return (
     <h3
       className={cn(
-        `text-md font-semibold text-foreground mb-1 ${MontserratBoldFont.className}`,
+        "font-sans text-md font-semibold tracking-normal text-foreground mb-1",
         className
       )}
     >
@@ -46,7 +39,7 @@ export function Paragraph({
   return (
     <p
       className={cn(
-        `text-sm text-black/70 dark:text-white/70 max-w-3xl mx-auto text-pretty ${MontserratFont.className}`,
+        "font-sans text-sm leading-relaxed text-muted-foreground max-w-3xl mx-auto text-pretty",
         className
       )}
     >

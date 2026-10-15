@@ -14,7 +14,6 @@ import { Github, Linkedin, Mail } from "lucide-react";
 // Internal
 import { useLanguage } from "@/contexts/language-context";
 import { Headline3, Paragraph } from "../text";
-import { caprasimoBoldFont, MontserratFont } from "@/lib/fonts";
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -50,22 +49,22 @@ export function HeroSection() {
             delay={150}
             animateBy="words"
             direction="top"
-            className={`text-4xl sm:text-3xl md:text-4xl mx-auto text-balace ${MontserratFont.className}`}
+            className="text-4xl sm:text-3xl md:text-4xl mx-auto text-balance"
           /> */}
           <BlurText
             text={"Krystyna Banaszewska"}
             delay={150}
             animateBy="words"
             direction="top"
-            className={`text-5xl sm:text-4xl md:text-6xl font-bold mb-6 mx-auto dark:text-balace text-[#f20089] dark:text-[#f09bcb] ${caprasimoBoldFont.className}`}
+            className="font-display text-5xl sm:text-4xl md:text-6xl font-medium tracking-tight leading-[1.05] mb-6 mx-auto text-balance justify-center text-foreground"
           />
           <Headline3
             text={t("hero.frontendDeveloper")}
-            className="text-3xl dark:text-[#5bbab5] text-[#564148] tracking-wide"
+            className="text-2xl text-primary"
           />
           <Headline3
             text={t("hero.frontendDeveloper2")}
-            className="text-xl dark:text-[#5bbab5] text-[#564148]"
+            className="text-lg font-normal text-muted-foreground"
           />
           <Paragraph
             text={t("hero.tagline")}

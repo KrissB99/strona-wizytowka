@@ -51,15 +51,15 @@ export function AboutSection() {
               key={index}
               whileHover={{
                 scale: 1.05,
-                boxShadow: "0 8px 32px rgba(80, 0, 200, 0.15)",
+                boxShadow: "0 8px 32px rgba(122, 46, 77, 0.10)",
               }}
               transition={{ type: "spring", stiffness: 400, damping: 30 }}
               className="group"
             >
-              <Card className="transition-all duration-300 bg-white/20 dark:bg-black/10 backdrop-blur-3xl border border-border/50 hover:bg-white/40 hover:dark:bg-black/40">
+              <Card className="transition-all duration-300 bg-card/70 backdrop-blur-xl border border-border hover:bg-card">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-pink-500/20 flex items-center justify-center group-hover:bg-pink-500/40 transition-colors">
-                    <skill.icon className="h-6 w-6 text-pink-500" />
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-secondary flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <skill.icon className="h-6 w-6 text-primary" />
                   </div>
                   <Headline3 text={skill.title} />
                   <Paragraph text={skill.description} />

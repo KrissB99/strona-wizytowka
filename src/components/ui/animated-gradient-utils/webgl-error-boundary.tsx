@@ -39,7 +39,7 @@ export function WebGLFallback({ className }: { className?: string }) {
       className={cn(className)}
       style={{
         background:
-          "linear-gradient(135deg, #0a001a 0%, #1a0b2e 50%, #f20089 100%)",
+          "linear-gradient(135deg, var(--background) 0%, var(--secondary) 100%)",
       }}
       aria-hidden="true"
     />

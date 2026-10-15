@@ -40,7 +40,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f1ede8] dark:bg-black">
+    <main className="min-h-screen bg-background">
       <Navigation
         activeSection={activeSection}
         setActiveSection={setActiveSection}
@@ -52,14 +52,20 @@ export default function Home() {
             theme === "light"
               ? {
                 preset: "custom",
-                color1: "#f1ede8",
-                color2: "#c0fcf7",
-                color3: "#48817d",
-                speed: 8,
+                color1: "#faf8f5",
+                color2: "#f1e4ea",
+                color3: "#e9e2da",
+                speed: 4,
               }
-              : { preset: "Oceanic", speed: 8 }
+              : {
+                preset: "custom",
+                color1: "#141211",
+                color2: "#2a1c22",
+                color3: "#1f1b19",
+                speed: 4,
+              }
           }
-          noise={{ opacity: 0.15 }}
+          noise={{ opacity: 0.06 }}
         />
       </div>
       <div className="flex flex-col lg:grid lg:grid-cols-3">
