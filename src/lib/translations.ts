@@ -1,5 +1,95 @@
 export const translations = {
   en: {
+    // Hero (from CV, Oct 2026)
+    "hero.title": "Frontend Developer · React, Next.js, TypeScript · Full-stack with Python",
+    "hero.frontendDeveloper2": "React, Next.js, TypeScript · Full-stack with Python",
+    "hero.tagline":
+      "4+ years of commercial experience building business-critical web apps.",
+
+    // About (from CV)
+    "about.description":
+      "Frontend developer with 4+ years of commercial experience building business-critical web apps in React, Next.js and TypeScript, plus Angular experience from a Ministry of Justice project. I own UI/UX end to end and care about accessibility, performance and clean code. A full-stack Python background lets me shape APIs and ship features without hand-offs.",
+    "about.skill1": "Frontend Development",
+    "about.skill1Desc":
+      "React, Next.js and TypeScript, plus Angular. Zustand for state, Tailwind CSS and shadcn/ui for reusable component libraries.",
+    "about.skill2": "Full-Stack with Python",
+    "about.skill2Desc":
+      "Python REST APIs with Django and Flask, SQL databases (MariaDB, PL/SQL) and automation of network-design processes.",
+    "about.skill3": "UI/UX & Accessibility",
+    "about.skill3Desc":
+      "I own UI/UX without a dedicated designer, build to WCAG standards and ship SEO-ready, responsive sites.",
+    "about.skill4": "AI-Powered Features",
+    "about.skill4Desc":
+      "AI-powered web apps such as automated service-desk ticket triage, plus TensorFlow and Keras from my studies.",
+
+    // Resume — shared labels
+    "resume.present": "present",
+    "resume.languages": "Languages",
+    "resume.remotePoland": "Remote, Poland",
+    "resume.client": "Client",
+    "resume.thesis": "Thesis",
+    "resume.skills.frontend": "Frontend",
+    "resume.skills.styling": "Styling & UI",
+    "resume.skills.backend": "Backend & Data",
+    "resume.skills.devops": "Testing & DevOps",
+    "resume.skills.ai": "AI / ML",
+    "resume.skills.ways": "Ways of working",
+    "resume.lang.polish": "Polish",
+    "resume.lang.native": "Native",
+    "resume.lang.english": "English",
+    "resume.lang.c1": "Fluent (C1)",
+
+    // Resume — AppCraft
+    "resume.appcraft.title": "Founder & Web Developer",
+    "resume.appcraft.company": "AppCraft (freelance)",
+    "resume.appcraft.b1": "Designed and built stomatologzachodnia.pl end to end for a 7-doctor dental clinic: brand identity, logo, UI design and Next.js / React development.",
+    "resume.appcraft.b2": "Multi-page site: services and pricing, doctor profiles, blog, gallery, reviews, contact; fully responsive.",
+    "resume.appcraft.b3": "Implemented SEO and local SEO: targeted titles and meta, canonical URLs, clean URL structure and a content blog.",
+    "resume.appcraft.b4": "Integrated AI tools into the workflow for branding, image processing and content checking.",
+
+    // Resume — Transition Technologies
+    "resume.tt.title": "Frontend Developer",
+    "resume.tt.location": "Client: Polish Ministry of Justice",
+    "resume.tt.b1": "Developed frontend features for a web application for the Ministry of Justice (Ministerstwo Sprawiedliwości) in Angular and TypeScript.",
+    "resume.tt.b2": "Built and extended UI components within a large, established enterprise codebase.",
+    "resume.tt.b3": "Worked to public-sector standards for accessibility (WCAG), security and reliability.",
+
+    // Resume — Nokia
+    "resume.nokia.title": "Frontend-Focused Full-Stack Developer",
+    "resume.nokia.location": "Bydgoszcz (remote), Poland",
+    "resume.nokia.b1": "Develop and maintain business-critical web apps in React, Next.js and TypeScript used daily by network-design experts.",
+    "resume.nokia.b2": "Built a library of reusable UI components with Tailwind CSS and shadcn/ui, speeding up delivery of new screens.",
+    "resume.nokia.b3": "Own UI/UX without a dedicated designer: redesigned interfaces and user flows based on expert feedback.",
+    "resume.nokia.b4": "Manage state with Zustand and build responsive, accessible interfaces.",
+    "resume.nokia.b5": "Work across the stack: Python REST APIs and automation of fibre-optic network design and deployment.",
+
+    // Resume — Unclassified
+    "resume.unclassified.title": "Full-Stack Developer",
+    "resume.unclassified.location": "Kielce (remote), Poland",
+    "resume.unclassified.b1": "Built an AI-powered web app in React and TypeScript that automated service-desk ticket triage.",
+    "resume.unclassified.b2": "Designed a performant Tailwind CSS frontend and wrote the technical documentation.",
+    "resume.unclassified.b3": "Worked in an Agile, international team, contributing to code reviews and continuous improvement.",
+
+    // Resume — Education
+    "resume.pl.degree": "MSc Computer Science, Web Applications",
+    "resume.pl.school": "Lublin University of Technology",
+    "resume.pl.location": "Lublin, Poland",
+    "resume.pl.description": "Thesis: “Comparative analysis of selected models for handwriting recognition”",
+    "resume.denmark.degree": "Erasmus+ & AI Internship",
+    "resume.denmark.school": "Univ. of Southern Denmark / Danish Technological Institute",
+    "resume.denmark.location": "Odense, Denmark",
+    "resume.denmark.description": "AI in Python, statistics in R, optimisation in MATLAB.",
+    "resume.wat.degree": "BSc Biocybernetics & Biomedical Engineering",
+    "resume.wat.school": "Military University of Technology",
+    "resume.wat.location": "Warsaw, Poland",
+    "resume.wat.description": "Thesis: “Development of a software application for interpreting data from sensors recording patient health events using a selected machine learning algorithm”",
+
+    // Portfolio — dental clinic (AppCraft)
+    "portfolio.dentist.title": "stomatologzachodnia.pl",
+    "portfolio.dentist.desc":
+      "Brand identity, logo, UI design and Next.js development for a 7-doctor dental clinic: services and pricing, doctor profiles, blog, gallery and reviews, with local SEO.",
+    "contact.location": "Warsaw, Poland",
+
     // Navigation
     "nav.about": "About",
     "nav.resume": "Resume",
@@ -9,63 +99,21 @@ export const translations = {
 
     // Hero Section
     "hero.greeting": "Hello, I'm",
-    "hero.title": "Frontend Developer with Full-Stack & AI Expertise",
-    "hero.tagline":
-      "I create modern web applications using the latest technologies, such as React.js, Next.js, Tailwind CSS, and artificial intelligence-based applications.",
     "hero.frontendDeveloper": "Frontend Developer",
-    "hero.frontendDeveloper2": "with Full Stack & AI Expertise",
 
     // About Section
     "about.title": "About Me",
-    "about.description":
-      "I'm a passionate Frontend Developer with expertise in Full-Stack Development and AI integration. I love creating intuitive, performant web applications that solve real-world problems.",
-    "about.skill1": "Frontend Development",
-    "about.skill2": "Full-Stack Development",
-    "about.skill3": "AI Integration",
-    "about.skill4": "Performance Optimization",
-    "about.skill1Desc":
-      "Expert in React, Next.js, TypeScript, and modern CSS frameworks like Tailwind CSS.",
-    "about.skill2Desc":
-      "Proficient in Python, databases, APIs, and cloud deployment platforms.",
-    "about.skill3Desc":
-      "Experience with AI APIs, machine learning models, and intelligent user interfaces.",
-    "about.skill4Desc":
-      "Focused on creating fast, accessible, and SEO-optimized web applications.",
 
     // Resume Section
     "resume.title": "Resume",
     "resume.education": "Education",
     "resume.experience": "Work Experience",
-    "resume.field": "Field of study",
-    "resume.spec": "Specialization",
     "resume.skillset": "Technology Stack",
-    "resume.nokiaDesc": "I started as a Full Stack Developer, which gave me a solid understanding of application architecture. Over time, I shifted my focus toward frontend development and UI/UX design. As a team, we are responsible for automating processes and building solutions that support experts in designing and deploying fiber optic networks. We aim to deliver user-friendly applications while continuously adopting new technologies and striving for simplicity in our solutions.",
-    "resume.unclassifiedDesc": "I was responsible for designing and implementing the UI/UX and frontend layer of the application, integrating the system with Jira, connecting it with a language model (AI), and implementing database integration to ensure platform stability and high performance.",
-
-    // WAT
-    "resume.wat": "Military University Of Technology",
-    "resume.wat.title": "Bachelor of Science",
-    "resume.wat.field": "Biocybernetics and Biomedical Engineering",
-    "resume.wat.spec": "Biocybernetics",
-    "resume.wat.location": "Warsaw, Poland",
-    "resume.wat.description": "Thesis topic: “Development of a software application for interpreting data from sensors recording patient health events using a selected machine learning algorithm.”",
 
 
-    // University of Southern Denmark
-    "resume.denmark": "University of Southern Denmark",
-    "resume.denmark.title": "Exchange Program",
-    "resume.denmark.field": "Artificial Intelligence",
-    "resume.denmark.location": "Odense, Denmark",
-    "resume.denmark.description": "I took part in a student exchange program in Denmark, where I gained fundamental knowledge of artificial intelligence, including machine learning algorithms, data analysis, and practical applications of AI in software solutions.",
 
 
-    // Politechnika Lubelska
-    "resume.politechnika.lubelska": "Lublin University of Technology",
-    "resume.pl.title": "Master of Science",
-    "resume.pl.field": "Computer Science",
-    "resume.pl.spec": "Web Applications",
-    "resume.pl.location": "Lublin, Poland",
-    "resume.pl.description": "Thesis topic: “Comparative analysis of selected models for handwriting recognition.”",
+
 
     // Portfolio Section
     "portfolio.title": "Portfolio",
@@ -73,10 +121,7 @@ export const translations = {
       "Showcasing my recent projects and technical expertise",
 
     // Western stomatology
-    "portfolio.dentist.title": "Modern Dental Clinic Website",
     "portfolio.dentist.category": "Healthcare",
-    "portfolio.dentist.desc":
-      "A professional website for a dental clinic featuring services, dentists, pricing, clinic description, and patient testimonials.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
 
     // Psychology Practice
@@ -123,6 +168,96 @@ export const translations = {
     "contact.followMe": "Follow me"
   },
   pl: {
+    // Hero (z CV, paź 2026)
+    "hero.title": "Programistka Frontend · React, Next.js, TypeScript · Full-stack z Pythonem",
+    "hero.frontendDeveloper2": "React, Next.js, TypeScript · Full-stack z Pythonem",
+    "hero.tagline":
+      "Ponad 4 lata komercyjnego doświadczenia w tworzeniu aplikacji webowych kluczowych dla biznesu.",
+
+    // O mnie (z CV)
+    "about.description":
+      "Jestem programistką frontend z ponad 4-letnim komercyjnym doświadczeniem w tworzeniu kluczowych dla biznesu aplikacji webowych w React, Next.js i TypeScript. Mam też doświadczenie z Angularem z projektu dla Ministerstwa Sprawiedliwości. Odpowiadam za UI/UX od początku do końca i dbam o dostępność, wydajność i czysty kod. Doświadczenie full-stack w Pythonie pozwala mi projektować API i dostarczać funkcje bez przekazywania pracy między zespołami.",
+    "about.skill1": "Programowanie Frontend",
+    "about.skill1Desc":
+      "React, Next.js i TypeScript, a także Angular. Zustand do zarządzania stanem, Tailwind CSS i shadcn/ui do bibliotek komponentów.",
+    "about.skill2": "Full-Stack z Pythonem",
+    "about.skill2Desc":
+      "REST API w Pythonie (Django, Flask), bazy SQL (MariaDB, PL/SQL) i automatyzacja procesów projektowania sieci.",
+    "about.skill3": "UI/UX i dostępność",
+    "about.skill3Desc":
+      "Projektuję UI/UX bez dedykowanego designera, tworzę zgodnie z WCAG i wdrażam responsywne strony przygotowane pod SEO.",
+    "about.skill4": "Funkcje oparte na AI",
+    "about.skill4Desc":
+      "Aplikacje webowe z AI, np. automatyczna klasyfikacja zgłoszeń service desku, oraz TensorFlow i Keras ze studiów.",
+
+    // CV — wspólne etykiety
+    "resume.present": "obecnie",
+    "resume.languages": "Języki",
+    "resume.remotePoland": "Zdalnie, Polska",
+    "resume.client": "Klient",
+    "resume.thesis": "Praca dyplomowa",
+    "resume.skills.frontend": "Frontend",
+    "resume.skills.styling": "Stylowanie i UI",
+    "resume.skills.backend": "Backend i dane",
+    "resume.skills.devops": "Testy i DevOps",
+    "resume.skills.ai": "AI / ML",
+    "resume.skills.ways": "Sposób pracy",
+    "resume.lang.polish": "Polski",
+    "resume.lang.native": "Ojczysty",
+    "resume.lang.english": "Angielski",
+    "resume.lang.c1": "Biegły (C1)",
+
+    // CV — AppCraft
+    "resume.appcraft.title": "Założycielka i Web Developerka",
+    "resume.appcraft.company": "AppCraft (freelance)",
+    "resume.appcraft.b1": "Zaprojektowałam i zbudowałam od podstaw stomatologzachodnia.pl dla kliniki z 7 lekarzami: identyfikacja wizualna, logo, projekt UI i wdrożenie w Next.js / React.",
+    "resume.appcraft.b2": "Wielostronicowy serwis: usługi i cennik, profile lekarzy, blog, galeria, opinie, kontakt; w pełni responsywny.",
+    "resume.appcraft.b3": "Wdrożyłam SEO i lokalne SEO: dopasowane tytuły i meta, kanoniczne adresy URL, czysta struktura adresów i blog z treściami.",
+    "resume.appcraft.b4": "Włączyłam narzędzia AI do pracy nad identyfikacją wizualną, obróbką zdjęć i weryfikacją treści.",
+
+    // CV — Transition Technologies
+    "resume.tt.title": "Programistka Frontend",
+    "resume.tt.location": "Klient: Ministerstwo Sprawiedliwości",
+    "resume.tt.b1": "Rozwijałam funkcje frontendowe aplikacji webowej dla Ministerstwa Sprawiedliwości w Angularze i TypeScript.",
+    "resume.tt.b2": "Tworzyłam i rozbudowywałam komponenty UI w dużej, dojrzałej bazie kodu klasy enterprise.",
+    "resume.tt.b3": "Pracowałam zgodnie ze standardami sektora publicznego w zakresie dostępności (WCAG), bezpieczeństwa i niezawodności.",
+
+    // CV — Nokia
+    "resume.nokia.title": "Full-Stack Developerka (nacisk na frontend)",
+    "resume.nokia.location": "Bydgoszcz (zdalnie), Polska",
+    "resume.nokia.b1": "Rozwijam i utrzymuję kluczowe dla biznesu aplikacje webowe w React, Next.js i TypeScript, z których codziennie korzystają eksperci projektujący sieci.",
+    "resume.nokia.b2": "Zbudowałam bibliotekę komponentów UI wielokrotnego użytku w Tailwind CSS i shadcn/ui, co przyspieszyło dostarczanie nowych ekranów.",
+    "resume.nokia.b3": "Odpowiadam za UI/UX bez dedykowanego designera: przeprojektowałam interfejsy i ścieżki użytkownika na podstawie opinii ekspertów.",
+    "resume.nokia.b4": "Zarządzam stanem w Zustand i tworzę responsywne, dostępne interfejsy.",
+    "resume.nokia.b5": "Pracuję w całym stacku: REST API w Pythonie i automatyzacja projektowania oraz wdrażania sieci światłowodowych.",
+
+    // CV — Unclassified
+    "resume.unclassified.title": "Full-Stack Developerka",
+    "resume.unclassified.location": "Kielce (zdalnie), Polska",
+    "resume.unclassified.b1": "Zbudowałam aplikację webową z AI w React i TypeScript, która automatyzowała klasyfikację zgłoszeń service desku.",
+    "resume.unclassified.b2": "Zaprojektowałam wydajny frontend w Tailwind CSS i napisałam dokumentację techniczną.",
+    "resume.unclassified.b3": "Pracowałam w międzynarodowym zespole Agile, uczestnicząc w code review i ciągłym doskonaleniu procesu.",
+
+    // CV — Wykształcenie
+    "resume.pl.degree": "Informatyka (studia magisterskie), Aplikacje internetowe",
+    "resume.pl.school": "Politechnika Lubelska",
+    "resume.pl.location": "Lublin, Polska",
+    "resume.pl.description": "Praca dyplomowa: „Analiza porównawcza wybranych modeli do rozpoznawania pisma odręcznego”",
+    "resume.denmark.degree": "Erasmus+ i staż z AI",
+    "resume.denmark.school": "Uniwersytet Południowej Danii / Duński Instytut Technologiczny",
+    "resume.denmark.location": "Odense, Dania",
+    "resume.denmark.description": "AI w Pythonie, statystyka w R, optymalizacja w MATLAB-ie.",
+    "resume.wat.degree": "Biocybernetyka i Inżynieria Biomedyczna (studia inżynierskie)",
+    "resume.wat.school": "Wojskowa Akademia Techniczna",
+    "resume.wat.location": "Warszawa, Polska",
+    "resume.wat.description": "Praca dyplomowa: „Opracowanie aplikacji programowej do interpretacji danych z sensorów rejestrujących zdarzenia zdrowotne pacjentów z wykorzystaniem wybranego algorytmu uczenia maszynowego”",
+
+    // Portfolio — klinika (AppCraft)
+    "portfolio.dentist.title": "stomatologzachodnia.pl",
+    "portfolio.dentist.desc":
+      "Identyfikacja wizualna, logo, projekt UI i wdrożenie w Next.js dla kliniki z 7 lekarzami: usługi i cennik, profile lekarzy, blog, galeria i opinie, z lokalnym SEO.",
+    "contact.location": "Warszawa, Polska",
+
     // Navigation
     "nav.about": "O mnie",
     "nav.resume": "CV",
@@ -132,61 +267,19 @@ export const translations = {
 
     // Hero Section
     "hero.greeting": "Cześć, jestem",
-    "hero.title": "Frontend, z doświadczeniem w Full-Stack oraz AI",
-    "hero.tagline":
-      "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii tj. React.js, Next.js, Tailwind CSS i aplikacjach opartych na sztucznej inteligencji.",
     "hero.frontendDeveloper": "Programistka Frontend",
-    "hero.frontendDeveloper2": "z doświadczeniem w Full Stack & AI",
 
     // About Section
     "about.title": "O mnie",
-    "about.description":
-      "Jestem pasjonatem Frontend Development z doświadczeniem w Full-Stack Development i integracji AI. Uwielbiam tworzyć intuicyjne, wydajne aplikacje webowe, które rozwiązują rzeczywiste problemy.",
-    "about.skill1": "Programowanie Frontend",
-    "about.skill2": "Programowanie Full-Stack",
-    "about.skill3": "Integracja AI",
-    "about.skill4": "Optymalizacja wydajności",
-    "about.skill1Desc":
-      "Ekspert w React, Next.js, TypeScript oraz nowoczesnych frameworkach CSS takich jak Tailwind CSS.",
-    "about.skill2Desc":
-      "Biegła w Python, bazach danych, API oraz platformach chmurowych.",
-    "about.skill3Desc":
-      "Doświadczenie z API AI, modelami uczenia maszynowego i inteligentnymi interfejsami użytkownika.",
-    "about.skill4Desc":
-      "Skupiam się na tworzeniu szybkich, dostępnych i zoptymalizowanych pod SEO aplikacji webowych.",
 
     // Resume Section
     "resume.title": "Curriculum vitae",
     "resume.education": "Wykształcenie",
     "resume.experience": "Doświadczenie",
-    "resume.field": "Kierunek",
-    "resume.spec": "Specjalizacja",
     "resume.skillset": "Stack technologiczny",
-    "resume.nokiaDesc": "Rozpoczęłam pracę jako Full Stack Developer, co pozwoliło mi zdobyć doświadczenie w architekturze aplikacji. Z czasem zaczęłam specjalizować się w zadaniach związanych z frontendem oraz projektowaniem UI/UX. W ramach zespołu odpowiadamy za automatyzację procesów i tworzenie rozwiązań wspierających ekspertów w projektowaniu i wdrażaniu sieci światłowodowych. Dbamy o to, aby nasze aplikacje były intuicyjne i przyjazne dla użytkownika, jednocześnie stale rozwijając się w kierunku nowych technologii i prostoty rozwiązań.",
-    "resume.unclassifiedDesc": "Byłam odpowiedzialna za projektowanie i implementację warstwy UI/UX oraz frontendu aplikacji, integrację systemu z Jira, połączenie z modelem językowym (AI) oraz wdrożenie integracji z bazą danych w celu zapewnienia stabilności i wysokiej wydajności platformy.",
 
-    // WAT
-    "resume.wat": "Wojskowa Akademia Techniczna",
-    "resume.wat.title": "Inżynier nauk ścisłych",
-    "resume.wat.field": "Biocybernetyka i Inżynieria Biomedyczna",
-    "resume.wat.spec": "Biocybernetyka",
-    "resume.wat.location": "Warszawa, Polska",
-    "resume.wat.description": "Temat pracy dyplomowej: “Analiza porównawcza wybranych modeli do rozpoznawania pisma odręcznego.”",
 
-    // Dania
-    "resume.denmark": "Uniwersytet Południowej Danii",
-    "resume.denmark.title": "Wymiana Studencka",
-    "resume.denmark.field": "Sztuczna Inteligencja",
-    "resume.denmark.location": "Odense, Dania",
-    "resume.denmark.description": "Uczestniczyłam w wymianie studenckiej w Danii, podczas której zdobywałam podstawową wiedzę z zakresu sztucznej inteligencji, obejmującą algorytmy uczenia maszynowego, analizę danych oraz praktyczne zastosowania AI w rozwiązaniach programistycznych.",
 
-    // Politechnika Lubelska
-    "resume.politechnika.lubelska": "Politechnika Lubelska",
-    "resume.pl.title": "Magister nauk ścisłych",
-    "resume.pl.field": "Informatyka",
-    "resume.pl.spec": " Aplikacje Internetowe",
-    "resume.pl.location": "Lublin, Polska",
-    "resume.pl.description": "Opracowanie aplikacji programowej do interpretacji danych z sensorów rejestrujących zdarzenia zdrowotne pacjentów z wykorzystaniem wybranego algorytmu maszynowego uczenia się.",
 
     // Portfolio Section
     "portfolio.title": "Portfolio",
@@ -194,10 +287,7 @@ export const translations = {
       "Prezentacja moich ostatnich projektów i umiejętności technicznych",
 
     // Western stomatology
-    "portfolio.dentist.title": "Strona nowoczesnej kliniki dentystycznej",
     "portfolio.dentist.category": "Zdrowie",
-    "portfolio.dentist.desc":
-      "Profesjonalna strona internetowa dla kliniki dentystycznej z prezentacją usług, lekarzy, wraz z cennikiem i opiniami pacjentów.",
     "portfolio.dentist.tech": "React, Next.js, TypeScript, Tailwind CSS",
 
     // Psychology Practice
@@ -237,7 +327,7 @@ export const translations = {
     // Contact Section
     "contact.title": "Kontakt",
     "contact.description":
-      "Zawsze jestem zainteresowany nowymi możliwościami i współpracą. Porozmawiajmy o Twoim następnym projekcie!",
+      "Zawsze jestem zainteresowana nowymi możliwościami i współpracą. Porozmawiajmy o Twoim następnym projekcie!",
     "contact.info": "Informacje kontaktowe",
     "contact.message.title": "Rozpocznijmy współpracę!",
     "contact.message.description": "Zawsze z entuzjazmem podchodzę do nowych projektów i współpracy z utalentowanymi osobami. Niezależnie od tego, czy potrzebujesz kompletnej aplikacji internetowej, czy chcesz ulepszyć istniejącą platformę, jestem gotowa pomóc Ci zrealizować Twoją wizję.",

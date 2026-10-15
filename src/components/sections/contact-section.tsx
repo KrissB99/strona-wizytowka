@@ -35,7 +35,7 @@ export function ContactSection() {
     {
       icon: MapPin,
       label: "Location",
-      value: "Płońsk/Warszawa, Poland",
+      value: t("contact.location"),
       href: "#",
     },
   ];

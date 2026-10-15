@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/language-context";
 
 // Icons
-import { Code, Database, Brain, Zap } from "lucide-react";
+import { Code, Database, Brain, Palette } from "lucide-react";
 import { Headline2, Headline3, Paragraph } from "../text";
 
 export function AboutSection() {
@@ -23,12 +23,12 @@ export function AboutSection() {
       description: t("about.skill2Desc"),
     },
     {
-      icon: Brain,
+      icon: Palette,
       title: t("about.skill3"),
       description: t("about.skill3Desc"),
     },
     {
-      icon: Zap,
+      icon: Brain,
       title: t("about.skill4"),
       description: t("about.skill4Desc"),
     },

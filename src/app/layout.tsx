@@ -12,7 +12,7 @@ import { HtmlWrapper } from "@/components/html-wrapper";
 export const metadata: Metadata = {
   title: "Krystyna Banaszewska - Frontend Developer",
   description:
-    "Professional Frontend Developer with Full-Stack and AI expertise. Building modern web applications with cutting-edge technologies.",
+    "Frontend developer (React, Next.js, TypeScript) with 4+ years of commercial experience building business-critical web apps, and a full-stack Python background.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION || "",
   },
